@@ -1,0 +1,626 @@
+question,answer
+What beginner mistakes should I avoid?,Overfeeding low dissolved oxygen poor sanitation light leaks and skipping logs; start simple and scale.
+How do I keep records effectively?,Use a daily log for pH; EC; water temp; air temp/RH; PPFD; notes on growth and issues.
+How often should I calibrate meters?,Calibrate pH monthly and EC/TDS quarterly or after hard knocks; verify with standards.
+Which pH buffers do I need?,4.00 and 7.00 solutions for two-point pH calibration; EC 1.413 mS/cm solution for EC meters.
+What is the correct nutrient mixing order?,Add Part A; mix thoroughly; then Part B; never add concentrates together; check EC and pH last.
+How do I budget a small build?,Plan for lights; pumps; air; reservoir; meters; nutrients; media; expect $150–500 for a starter setup.
+What is typical cost per head of lettuce?,Often $0.20–$0.60 in consumables depending on electricity nutrients and seed costs.
+How do I estimate electricity use?,Sum light wattage and pump/air draw; multiply by hours per day; then by kWh price.
+How do I design airflow?,Target gentle uniform air movement; avoid direct blasts; size exhaust/intake to maintain RH and temperature.
+How do I size dehumidification?,Estimate liters/day from plant transpiration; select dehumidifier capacity accordingly; add drainage.
+Is CO2 enrichment useful indoors?,It can be at high PPFD and sealed rooms; manage safely with monitors; not critical for beginners.
+How do I ensure food safety?,Use clean water; sanitize tools; wash hands; avoid pets in grow area; keep records and traceability.
+Are heavy metals a concern?,Use food-grade plastics and RO water if local water is questionable; avoid galvanized parts in solution paths.
+How do I integrate automation?,Use timers for lights and pumps; float valves; pH/EC controllers; and Wi-Fi sensors for alerts.
+What sensors are most valuable?,pH; EC; reservoir temperature; air temp/RH; light meter; optional water level sensor for alerts.
+How do I log data automatically?,Use a microcontroller or off-the-shelf hubs to log pH EC temps and RH to a spreadsheet or cloud dashboard.
+What redundancy should I add?,Backup air pump; spare mains pump; extra airstones; spare meter probes; and UPS for outages.
+How do I recover from a pump failure?,Immediately aerate manually or with backup; inspect lines; replace pump; monitor roots for stress.
+How do I handle algae blooms?,Darken reservoirs; seal light leaks; clean surfaces; reset solution; lower water temps; increase sanitation.
+How do I treat biofilm in lines?,Flush with diluted peroxide or peracetic acid between cycles; brush accessible tubing; improve filtration.
+What are signs of nutrient imbalance?,Leaf chlorosis; necrosis; tip burn; stunted growth; check pH and EC; adjust slowly; log changes.
+How do I diagnose pH-related issues?,If pH is high iron uptake drops causing yellowing; if low calcium/magnesium issues; correct gradually.
+Can I grow microgreens hydroponically?,Yes on mats or shallow trays; harvest in 7–14 days; minimal nutrients needed; high sanitation.
+Can I produce fodder hydroponically?,Yes with barley or wheat in 6–8 days; rinse frequently; control mold with airflow and cleanliness.
+How do I manage pollination for tomatoes?,Use vibration or electric toothbrush on flowers daily; maintain airflow; keep humidity moderate during bloom.
+What pruning strategy for tomatoes?,Prune to single or double leaders; remove suckers; lower-and-lean as trusses develop; support fruit weight.
+How often should I clean the system?,Wipe surfaces weekly; deep-clean and sanitize lines and reservoirs between each crop cycle.
+How do I plan crop rotations?,Alternate heavy feeders with lighter ones; sanitize between runs; adjust EC and pH profiles accordingly.
+What is a good maintenance checklist?,Daily pH/EC/temp check; weekly filter and airstone check; monthly meter calibration; per-cycle sanitation.
+How do I prevent leaks?,Use thread sealant or PTFE tape on fittings; test under pressure; place reservoirs in secondary containment.
+Are there legal considerations?,Check local regulations for water discharge; electrical safety; and food handling if selling produce.
+How do I choose nutrient brands?,Pick reputable complete lines; start with simple two-part salts; avoid frequent switching mid-cycle.
+What’s the best light schedule for basil?,16–18 hours per day; moderate PPFD; prune weekly to promote bushy growth.
+What’s the best light schedule for lettuce?,14–18 hours per day; moderate PPFD; avoid heat stress to prevent bolting.
+What is photoperiodism?,Plants’ response to day length; relevant for flowering crops; most leafy greens are day-neutral for vegetative harvest.
+How do I prevent cross-contamination?,Separate tools by system; disinfect between uses; isolate sick plants; maintain clean shoes and hands.
+What emergency kit should I keep?,Spare pumps; airstones; tubing; calibration fluids; peroxide; zip ties; clamps; and a basic tool set.
+How do I manage noise and vibration?,Use rubber feet; flexible tubing; enclose loud pumps; isolate from floor and wall contact.
+How do I winterize an indoor system?,Insulate reservoirs and lines; manage RH to prevent condensation; ensure intake air isn’t too cold.
+How do I summer-proof a system?,Provide reservoir chilling or frozen bottles; increase airflow; run lights at night to reduce heat load.
+How do I select seed varieties?,Choose compact; bolt-resistant cultivars for small systems; pick disease-resistant varieties where possible.
+What’s a simple startup recipe?,EC 0.8–1.2 mS/cm for seedlings; 1.2–1.8 for greens; pH ~5.8–6.2; water temp ~20°C; strong aeration.
+What supports plants in hydroponics?,Net pots trellis netting plant clips strings stakes and the chosen growing medium (e.g. coco rockwool clay pebbles) provide mechanical support.
+How do plant clips work?,Clips attach stems to strings or stakes without crushing tissue guiding vertical growth for tomatoes cucumbers and peppers.
+What is string trellising?,Plants are tied to hanging strings from an overhead wire; stems are clipped and lowered/leaned as they grow.
+When should I add trellis netting?,Install before canopy expands to avoid breakage; typically at early vegetative stage once plants reach 20–30 cm.
+Are net pots enough support?,Net pots hold the base but vining or heavy-fruit plants still need strings clips or cages for lateral support.
+Which medium gives best anchoring?,Clay pebbles and rockwool provide strong root anchoring; coco offers good hold with more water retention.
+Do leafy greens need support?,Usually no beyond the net pot; ensure adequate spacing and airflow to prevent leaf lodging.
+How to support cucumbers in hydroponics?,Use vertical strings with clips every 20–30 cm prune laterals as desired and add fruit slings for heavy cucumbers if needed.
+How to support tomatoes indoors?,String trellis with tomato clips and optional tomato hooks; lower-and-lean to manage height and fruit load.
+How to support peppers?,Stake or string with soft ties; avoid tight knots that girdle stems; add cross supports if fruit clusters are heavy.
+What is the seed starting process?,Condition medium sow seeds maintain humidity/warmth germinate then grow seedlings to transplant size with gentle airflow and light.
+How to prepare rockwool for seeding?,Pre-soak cubes in pH 5.5 water for 20–30 minutes drain gently and keep evenly moist (not waterlogged).
+How to sow lettuce seeds in rockwool?,"Place 1–2 seeds per 1"" cube press lightly for contact keep at 20–22°C humidity dome on until sprout."
+How long does lettuce take to germinate?,Typically 2–4 days at 20–22°C; slower in cooler temperatures.
+When to transplant lettuce seedlings?,At 10–14 days or when roots emerge from cubes and the first true leaves appear.
+What EC/pH for seedlings?,Start EC 0.4–0.8 mS/cm for most greens pH 5.8–6.0; increase gradually after transplant.
+How much light for seedlings?,Aim 150–250 µmol/m²/s PPFD for leafy greens; 14–18 hours photoperiod with minimal heat.
+How to harden seedlings before transplant?,Increase airflow slightly reduce humidity and expose to system conditions for 1–3 days before moving.
+How to avoid transplant shock?,Match solution temp and pH handle by the cube (not stem) and maintain high DO; avoid strong feeding on day 1.
+How to thin seedlings?,If two sprouts emerge snip the weaker seedling at substrate level to prevent root disturbance.
+What is seed priming?,Pre-soaking seeds in water or mild nutrient/beneficial solution for 6–24 hours to speed uniform germination (dry briefly before sowing).
+Are pelleted seeds useful?,Yes for tiny seeds like lettuce or basil; they improve placement in cubes or plugs.
+How many seeds per plug?,Use 1–2 for most leafy greens; multi-sow (3–5) for herbs if you want bushier plants.
+When to start fruiting crops?,Start tomatoes/peppers indoors 3–6 weeks before transplant; transplant when sturdy with 3–5 true leaves.
+How long to harvest from seed (lettuce)?,Around 4–6 weeks post-transplant under adequate PPFD; total 6–8 weeks from seeding.
+How long to harvest basil from seed?,Typically 6–8 weeks to first significant harvest with regular pruning.
+How to plant in clay pebbles?,Rinse pebbles fill around the cube or plug in the net pot and ensure roots can reach moisture/flow.
+How deep to seat net pots?,Seat so the cube bottom is 1–2 cm above solution in DWC (air gap) or just touches the film in NFT.
+Do I sterilize seeds?,Optional: brief 1–2% hydrogen peroxide rinse (1–2 minutes) or hot water treatment; rinse thoroughly before sowing.
+What temperature for germination?,Most greens: 20–22°C; basil: 22–26°C; tomatoes/peppers: 24–28°C for faster uniform sprouting.
+What humidity for germination?,High humidity (70–90%) under a dome; vent after emergence to prevent damping-off.
+How to prevent damping-off?,Avoid oversaturation increase airflow after sprout keep surfaces clean and consider biological controls if needed.
+When to remove humidity dome?,When most seeds have sprouted and first true leaves appear—usually 3–7 days depending on crop.
+How to space seedlings in systems?,Lettuce 15–25 cm centers; basil 15–20 cm; tomatoes/peppers follow system recommendations (often 30–60 cm).
+How to support strawberries?,Use vertical towers or supported channels; crown above medium runners trimmed and netting if heavy fruit.
+What is a horizontal hydroponic system?,A layout where channels or beds are arranged flat in rows (e.g. NFT channels or DWC tables) for easy access and even lighting.
+What are pros of horizontal systems?,Simpler plumbing easy access to plants consistent light distribution and straightforward scaling in rows.
+What are cons of horizontal systems?,Larger footprint per plant limited use of vertical space and potentially more tables/racks to maintain.
+What is a vertical hydroponic system?,A stacked or tower layout that grows plants upward (e.g. vertical towers) to increase density per floor area.
+What are pros of vertical systems?,High plant density per square meter good for tight spaces and efficient for leafy greens and strawberries.
+What are cons of vertical systems?,More complex plumbing potential shading uneven flow if unbalanced and more demanding maintenance access.
+How long to assemble a small horizontal DWC?,About 1–2 hours for 1–4 sites using a tote net pots air pump and air stones.
+How long to assemble a small horizontal NFT?,Roughly 3–5 hours for 2–4 channels including manifold returns and reservoir.
+How long to assemble a vertical tower kit?,Around 2–4 hours with included hardware; plan extra time for leveling and leak checks.
+How long to assemble a DIY vertical tower?,About 4–8 hours depending on drilling irrigation ring design and bracket mounting.
+What tools for a horizontal NFT build?,Measuring tape drill hole saw PVC cutter deburring tool silicone/sealant and basic wrenches.
+What parts for a 4‑channel horizontal NFT?,4 food‑grade channels end caps feed manifold with valves returns reservoir pump and pre-filter.
+What tools for a vertical tower build?,Level drill/driver hole saw PVC cutter zip ties or clamps silicone and safety PPE.
+How to avoid shading in vertical towers?,Stagger planting pockets rotate towers weekly and use side-lighting or reflective backs.
+How to balance flow in vertical towers?,Use distribution rings or equal-length feeds with valves and check for channeling during tests.
+How long to commission a new system?,1–2 hours to rinse leak-test with water sanitize then fill and stabilize pH/EC before planting.
+How long until first harvest (lettuce)?,Typically 4–6 weeks from transplant in both horizontal NFT/DWC and vertical towers under adequate PPFD.
+Which system for limited floor space?,Vertical towers maximize plants per square meter; ensure sufficient light reaches lower tiers.
+Which system for easiest maintenance?,Horizontal DWC/NFT tables offer easier access for pruning cleaning and sensor checks.
+What is a Wick system?,A passive system that uses capillary action to draw nutrient solution to the roots; simple but low oxygen and flow.
+When should I use Wick systems?,For small herbs and microgreens where low demand and simplicity outweigh growth speed.
+What is Kratky vs DWC?,Kratky is passive with a fixed air gap forming over time; DWC actively aerates a constant reservoir with air stones.
+How does RDWC differ from DWC?,RDWC connects multiple buckets to a central reservoir with constant recirculation for uniform EC pH and temperature.
+What are RDWC pros and cons?,Pros: uniformity scalability strong growth. Cons: more plumbing risk spreads quickly higher cost.
+What slope is best for NFT channels?,Aim for 1–3% slope (1–3 cm drop per meter) for smooth film flow without pooling.
+How deep should NFT channels be?,Shallow channels (2–4 cm) support a thin film while preventing roots from blocking flow.
+How fast should NFT flow be?,Target 1–2 L/min per channel depending on plant count and channel length.
+How do I prevent root clogging in NFT?,Prune roots avoid overcrowding stagger planting and maintain steady flow with pre-filters.
+What is Ebb and Flow?,A flood-and-drain system that periodically fills a tray with nutrient solution then drains back to the reservoir.
+How long should flood cycles be?,Typical 5–15 minutes per cycle 3–8 times daily depending on medium and environment.
+What media suits Ebb and Flow?,Clay pebbles or coarse perlite for rapid drainage and oxygen return after drains.
+How do I size an Ebb and Flow pump?,Calculate tray volume plus head height; pick a pump that fills in 5–10 minutes with 20–30% overhead.
+What is Drip irrigation hydroponics?,Emitters drip nutrient solution to each plant site; excess drains back for recirculation.
+How do I prevent drip emitter clogging?,Use filters clean lines avoid organic precipitates and periodically flush with clean water.
+What is a Dutch bucket system?,A modular drip system using buckets with siphon elbows and a central drain line great for tomatoes and peppers.
+What media for Dutch buckets?,Mix of perlite and coco or straight perlite; ensure good drainage through elbow height.
+How much runoff for drip systems?,Aim for 10–20% runoff per feeding to prevent salt buildup in media.
+What is Aeroponics?,Roots are suspended in air and misted with fine droplets providing high oxygen for rapid growth.
+What droplet size for aeroponics?,High-pressure aeroponics targets 30–80 microns; low-pressure misters produce larger droplets.
+How often to mist in aeroponics?,Short cycles like 5–10 seconds on 2–5 minutes off; adjust for humidity and root mass.
+How to avoid nozzle clogging?,Use fine filtration (5–50 microns) RO water and regular purges; keep nutrients filtered.
+What is Fogponics?,Uses ultrasonic foggers to create ultra-fine droplets for root absorption; sensitive to contamination.
+How do vertical towers work?,Nutrient solution is pumped to the top and trickles down through planting pockets recirculating to the base.
+How to keep towers evenly fed?,Use distribution rings level installations and periodic checks for channeling or dry pockets.
+What is the best system for lettuce?,NFT DWC or Kratky all perform well; choose based on budget space and maintenance preferences.
+Best system for tomatoes?,Dutch buckets (drip) or RDWC for vigor and control; ensure ample support and higher EC.
+Best system for strawberries?,Vertical towers or NFT with gentle flow; maintain cooler solution and good pollination airflow.
+What backup is critical for DWC?,Uninterrupted aeration; use a UPS or battery-backed air pump to avoid root suffocation.
+How to manage power outages in NFT?,Add a buffer reservoir or wicks reduce plant load and restore flow quickly to avoid desiccation.
+How to design an NFT manifold?,Balance flows with equal-length feeds use valves per channel and add a debris filter upstream.
+How to prevent siphon backflow?,Install check valves or air breaks and position returns above reservoir waterline.
+What diameter for return lines?,Oversize returns (e.g. 32–40 mm) to prevent backups from root mats and debris.
+Do I need redundancy?,Yes—duplicate pumps or air systems reduce catastrophic failure risk in recirculating systems.
+How to isolate system failures?,Use valves and unions to segment lines; quarantine affected channels or buckets quickly.
+How to scale RDWC?,Add modules on a common manifold upsize the return line and centralize chilling and filtration.
+What filtration helps RDWC?,Inline mesh filters and biofilters; optional UV sterilization to reduce pathogens.
+Is UV useful in hydroponics?,It can reduce pathogens in recirculating reservoirs but must be sized to flow rate.
+How to quiet pumps and airflow?,Use rubber feet flexible tubing mufflers on air pumps and isolate vibrations from structure.
+What reservoir shape is best?,Opaque lidded smooth-walled tanks that are easy to clean and resist light intrusion.
+How to plan maintenance?,Schedule weekly checks for EC/pH filter cleaning and monthly deep-clean cycles for lines and trays.
+What is hydroponics?,Hydroponics is a method of growing plants without soil using mineral nutrient solutions in water.
+What are the benefits of hydroponic farming?,Benefits include faster growth higher yields less water usage no soil-borne diseases and year-round growing.
+What nutrients do plants need in hydroponics?,Plants need nitrogen phosphorus potassium calcium magnesium sulfur and micronutrients like iron zinc and copper.
+What is the ideal pH for hydroponic systems?,The ideal pH range for most hydroponic plants is 5.5 to 6.5 with slight variations depending on the plant species.
+How often should I change the nutrient solution?,Change the nutrient solution every 1-2 weeks or when EC levels drop significantly or pH becomes unstable.
+What is EC in hydroponics?,EC (Electrical Conductivity) measures the concentration of nutrients in the solution typically between 1.2-2.5 mS/cm for most plants.
+What are the different types of hydroponic systems?,Main types include Deep Water Culture (DWC) Nutrient Film Technique (NFT) Ebb and Flow Aeroponics and Drip Systems.
+What is Deep Water Culture?,DWC is a hydroponic system where plant roots are suspended in oxygenated nutrient solution with air stones providing oxygen.
+How do I prevent root rot in hydroponics?,Prevent root rot by maintaining proper oxygen levels keeping water temperature below 75°F and using beneficial bacteria.
+What lighting is best for hydroponic plants?,LED grow lights are most efficient providing full spectrum light with low heat output and energy consumption.
+How much light do hydroponic plants need?,Most plants need 14-18 hours of light per day during vegetative growth and 12 hours during flowering/fruiting stages.
+What temperature should hydroponic water be?,Maintain water temperature between 65-75°F (18-24°C) for optimal nutrient uptake and root health.
+Can I grow tomatoes hydroponically?,Yes tomatoes grow excellently in hydroponics requiring support structures and higher nutrient concentrations during fruiting.
+What is the best growing medium for hydroponics?,Popular mediums include rockwool clay pebbles perlite vermiculite and coconut coir each with different properties.
+How do I start seeds for hydroponics?,Start seeds in rockwool cubes or starter plugs keeping them moist and warm until germination then transfer to your system.
+What causes yellow leaves in hydroponic plants?,Yellow leaves can indicate nutrient deficiency (especially nitrogen) pH imbalance overwatering or insufficient light.
+How do I measure and adjust pH in hydroponics?,Use a digital pH meter to test daily then add pH up (potassium hydroxide) or pH down (phosphoric acid) to adjust.
+What is the difference between vegetative and flowering nutrients?,Vegetative nutrients are high in nitrogen for leaf growth while flowering nutrients are high in phosphorus and potassium for fruit/flower development.
+How do I clean my hydroponic system?,Clean between crops with hydrogen peroxide or bleach solution rinse thoroughly and sanitize all components to prevent disease.
+Can I grow herbs hydroponically?,Yes herbs like basil mint cilantro and parsley grow very well in hydroponic systems with faster growth than soil.
+What is nutrient lockout?,Nutrient lockout occurs when pH is too high or low preventing plants from absorbing nutrients even when they're present in the solution.
+How do I calculate nutrient strength?,Use an EC meter to measure electrical conductivity typically starting at 1.0-1.2 mS/cm for seedlings and increasing to 1.8-2.2 for mature plants.
+What causes algae growth in hydroponic systems?,Algae grows due to light exposure to nutrient solution high temperatures and organic matter - prevent by covering reservoirs and maintaining cleanliness.
+How do I transplant seedlings to hydroponics?,Gently remove seedlings from starter medium rinse roots clean and place in net pots with growing medium ensuring roots reach the nutrient solution.
+What is the best water source for hydroponics?,Reverse osmosis water is ideal but filtered tap water works well - avoid hard water with high mineral content that can cause nutrient imbalances.
+How do I troubleshoot slow growth in hydroponics?,Check pH levels nutrient concentration water temperature lighting duration/intensity and ensure adequate oxygen levels in the root zone.
+What is the difference between organic and synthetic nutrients?,Organic nutrients come from natural sources but can clog systems while synthetic nutrients are more stable and easier to control in hydroponics.
+How do I prevent pests in hydroponic systems?,Use integrated pest management: maintain clean environment introduce beneficial insects use sticky traps and apply organic pest controls when needed.
+Can I grow root vegetables hydroponically?,Some root vegetables like radishes and carrots can be grown hydroponically but they require deeper systems and specific growing techniques.
+What is the ideal humidity for hydroponic growing?,Maintain humidity between 40-60% for most plants with higher humidity (60-70%) for seedlings and lower (40-50%) during flowering to prevent mold.
+How do I know when to harvest hydroponic vegetables?,Harvest timing varies by plant - lettuce when leaves are full size tomatoes when fully colored herbs when they reach desired size but before flowering.
+What causes wilting in hydroponic plants?,Wilting can indicate root problems nutrient toxicity pH issues insufficient water or disease - check all system parameters immediately.
+How do I maintain oxygen levels in hydroponic water?,Use air stones air pumps or water pumps to create bubbles and circulation ensuring roots receive adequate oxygen for healthy growth.
+What is the best way to start a hydroponic garden?,Start small with a simple DWC or NFT system choose easy plants like lettuce or herbs and gradually expand as you gain experience.
+How do I calculate the cost of running a hydroponic system?,Factor in electricity for lights and pumps water costs nutrients growing medium and initial equipment - typically $50-200/month for small systems.
+Can I use rainwater for hydroponics?,Rainwater can be used but should be tested for pH and contaminants and may need filtering or treatment before use in hydroponic systems.
+What is the difference between hydroponics and aquaponics?,Hydroponics uses synthetic nutrients while aquaponics combines fish farming with plant growing using fish waste as natural fertilizer.
+How do I choose the right hydroponic system for beginners?,Start with Deep Water Culture (DWC) or Kratky method - they're simple affordable and great for learning the basics of hydroponic growing.
+What causes brown spots on hydroponic plant leaves?,Brown spots often indicate calcium deficiency nutrient burn or fungal disease - check nutrient levels and improve air circulation.
+How do I store hydroponic nutrients?,Store nutrients in cool dark places away from direct sunlight keep containers sealed and use within expiration dates for best results.
+What is the best way to monitor my hydroponic system?,Check pH and EC daily monitor water temperature observe plant health and keep records of all measurements and adjustments made.
+Can I grow fruit trees hydroponically?,While possible fruit trees are challenging in hydroponics due to size and long growing periods - better suited for dwarf varieties in large systems.
+How do I prevent nutrient deficiencies in hydroponics?,Use complete nutrient solutions maintain proper pH monitor EC levels and ensure all essential nutrients are available in correct ratios.
+What is the Kratky method?,The Kratky method is a passive hydroponic system where plants grow in containers with nutrient solution that gradually decreases as plants consume it.
+How do I choose the right growing medium for my plants?,Consider water retention drainage pH neutrality and plant needs - rockwool for seedlings clay pebbles for mature plants coco coir for water-loving plants.
+What causes stunted growth in hydroponic plants?,Stunted growth can result from incorrect pH nutrient imbalances insufficient light root problems or temperature extremes - systematically check each factor.
+How do I set up a simple hydroponic system at home?,Use a bucket net pots air stone air pump and nutrient solution - drill holes for net pots add air stone fill with nutrients and plant your seeds.
+What is the best way to learn hydroponics?,Start with simple systems read guides join online communities experiment with different plants and don't be afraid to make mistakes and learn from them.
+What is Nutrient Film Technique?,NFT is a system where a thin film of nutrient solution flows continuously over plant roots in shallow channels providing constant access to nutrients and oxygen.
+How do I set up an Ebb and Flow system?,Ebb and Flow systems flood grow trays with nutrient solution periodically then drain it back to the reservoir using a timer-controlled pump.
+What is Aeroponics?,Aeroponics suspends plant roots in air and mists them with nutrient solution providing maximum oxygen exposure and efficient nutrient delivery.
+How do I build a Drip System?,Drip systems use a pump to deliver nutrient solution through emitters to individual plants with excess solution draining back to the reservoir.
+What sensors do I need for hydroponic monitoring?,Essential sensors include pH meter EC/TDS meter water temperature probe air temperature/humidity sensor and light intensity meter.
+How do I calibrate my pH meter?,Calibrate using pH 4.0 and 7.0 buffer solutions rinse the electrode and adjust the meter according to manufacturer instructions.
+What is the optimal EC for lettuce?,Lettuce prefers EC between 1.2-1.8 mS/cm during vegetative growth with lower levels (0.8-1.2) for seedlings.
+What nutrients does basil need?,Basil needs balanced NPK with higher nitrogen (3-1-2 ratio) plus calcium and magnesium with EC around 1.4-1.8 mS/cm.
+How do I treat aphids in hydroponics?,Use insecticidal soap neem oil or introduce beneficial insects like ladybugs. Remove heavily infested plants and improve air circulation.
+What causes powdery mildew?,Powdery mildew thrives in high humidity and poor air circulation. Prevent by maintaining 40-60% humidity and ensuring good ventilation.
+How do I identify nutrient burn?,Nutrient burn shows as brown crispy leaf tips and edges. Reduce EC levels and flush the system with plain water for 24-48 hours.
+How do I prevent calcium deficiency in lettuce?,Maintain adequate calcium using Cal-Mag supplements and keep pH at 5.8–6.2; avoid rapid EC swings that limit uptake.
+What water level should I keep in DWC?,Keep water 2–3 cm below net pot bottoms so roots get both solution and oxygen-rich airspace.
+How often should air stones run in DWC?,Run air stones 24/7 to maintain dissolved oxygen above 6 mg/L for healthy roots.
+What size air pump do I need?,Target 0.5–1.0 L/min of air per liter of nutrient solution; more for warm water temps.
+How do I control reservoir temperature?,Use a chiller or frozen bottles shade the reservoir insulate lines and keep ambient below 26°C.
+Why is my pH drifting daily?,Biological activity plant uptake and CO2 dissolution can shift pH; buffer with stable nutrients and adjust in small increments.
+How often should I top off the reservoir?,Top off with pH-balanced water daily to maintain volume then reset EC/pH fully every 7–14 days.
+What is a safe water change schedule?,Perform a full drain and remix every 1–2 weeks; weekly for fruiting crops or small reservoirs.
+How do I sanitize between crops?,Drain scrub run 3% hydrogen peroxide or diluted bleach through lines then flush thoroughly with clean water.
+Can I reuse clay pebbles?,Yes. Rinse debris soak in 3% H2O2 or diluted bleach rinse until neutral and dry before reuse.
+Which medium holds moisture best?,Coco coir holds moisture well; perlite drains fastest; rockwool retains water but needs careful pH conditioning.
+How do I pre-condition rockwool?,Soak in pH 5.5 water for 20–30 minutes then gently shake excess before seeding or transplanting.
+What EC is best for basil?,Maintain EC around 1.4–1.8 mS/cm with slightly higher nitrogen during vegetative growth.
+What EC for tomatoes in fruiting?,Target 2.0–3.5 mS/cm depending on cultivar climate and brix goals; monitor for tip burn.
+What light hours for leafy greens?,Provide 14–18 hours of light daily; dim or shorten if leaves bleach or canoe.
+What PPFD for lettuce?,Aim for 150–300 µmol/m²/s PPFD; increase gradually to prevent tip burn and bolting.
+How close should LEDs be?,Follow manufacturer PPFD maps; typically 20–45 cm above canopy depending on wattage and optics.
+What spectrum is best?,Full-spectrum LEDs with balanced red/blue and adequate green boost photosynthesis and visual assessment.
+How do I prevent algae in NFT channels?,Keep channels opaque seal light leaks and maintain sanitation; avoid standing water.
+Why are my roots brown?,Could be staining from nutrients low dissolved oxygen high temps or pythium; smell tests help differentiate.
+How do I raise dissolved oxygen?,Add more air stones increase airflow improve water circulation and reduce water temperature to 18–20°C.
+How do I prevent root rot?,Maintain DO > 6 mg/L keep water 18–20°C avoid organic buildup and sanitize regularly.
+What causes tip burn in lettuce?,Often calcium transport issues from high VPD or excessive light; reduce PPFD and keep consistent transpiration.
+What is ideal humidity (VPD)?,Keep 50–60% RH for most crops; match VPD ~0.8–1.2 kPa for vegetative growth.
+How do I manage VPD?,Control temperature and RH with ventilation dehumidifiers and gentle air movement; avoid leaf flutter.
+How do I prevent powdery mildew?,Keep RH 40–60% improve airflow remove infected leaves and consider sulfur burners or biologicals as needed.
+What pests are common indoors?,Aphids thrips spider mites and fungus gnats; use sticky traps and beneficial insects proactively.
+How do I control fungus gnats?,Let top media dry slightly use BTi dunks sticky traps and improve drainage and airflow.
+Why are leaves curling upward?,Excess light/heat low humidity or wind stress; reduce PPFD heat and direct fan blast.
+Why are leaves curling downward?,Overwatering high EC or nitrogen toxicity; reduce feeding strength and improve aeration.
+How do I flush nutrient lockout?,Drain refill with pH 5.8 water for 24 hours then reintroduce a lighter-strength balanced solution.
+What pH drift is acceptable?,Daily drift of ±0.2–0.3 is normal; correct gradually and log trends to find root causes.
+Can I run organic nutrients?,Yes but they can clog lines and lower DO; use larger emitters biofilters and frequent sanitation.
+How do I prevent emitter clogs?,Filter input water use inline filters avoid precipitate-prone mixes and periodically flush lines.
+What is the Kratky method water gap?,Maintain a 3–5 cm air gap as plants grow to ensure oxygen to the roots.
+Can I use rainwater?,Yes but test for pH and contaminants; consider RO for consistency.
+Is RO water necessary?,Not required but RO gives stable baselines; remineralize lightly to avoid pH swings.
+How do I mix nutrients correctly?,Add part A fully stir then part B to avoid precipitation; check EC/pH after each step.
+Do I need Cal-Mag with RO?,Often yes at 0.5–1.0 mL/L depending on crop and base nutrient formula.
+How do I prevent precipitation?,Avoid adding concentrates together keep solution temps ~20°C and follow manufacturer mixing order.
+How do I stage nutrients by growth?,Higher N during veg; increase P/K for flowering/fruiting; adjust EC gradually.
+What backup power do I need?,Size UPS or generator to keep pumps and air running; even 30–60 minutes helps prevent stress.
+How often to clean filters?,Inspect weekly; clean or replace when flow drops or debris is visible.
+How do I reduce water usage?,Use closed-loop systems capture condensate and match plant density to system size.
+Can I interplant species?,Yes but match pH/EC and light needs; fast growers can shade slow crops.
+What water temperature is too high?,Above 24–26°C increases disease risk and reduces DO; chill or insulate to stay near 20°C.
+How do I measure EC accurately?,Calibrate meters regularly rinse probes and measure at stable temperatures.
+What is target pH for herbs?,Generally 5.8–6.2; basil tolerates slightly higher pH than leafy greens.
+Why is new growth pale?,Likely iron or nitrogen deficiency or high pH; check pH and supplement with chelated iron if needed.
+How do I prevent bolting in lettuce?,Keep temps 18–22°C moderate PPFD and avoid long photoperiods and heat spikes.
+How often should I prune basil?,Weekly light pruning above nodes to encourage bushy growth and prevent early flowering.
+Can I grow strawberries hydroponically?,Yes; use slightly acidic pH (5.5–6.0) moderate EC strong light and good pollination airflow.
+How do I hand-pollinate indoors?,Gently shake flowering plants or use a soft brush; maintain airflow to move pollen.
+What is the best starter system for beginners?,A simple DWC or Kratky tote with air stone net pots and LED strip is cost-effective and forgiving.
+How do I keep records?,Log pH EC temps RH PPFD and observations daily; correlate with growth to optimize recipes.
+What safety tips should I follow?,Label chemicals wear gloves/eye protection store acids/bases separately and child-proof reservoirs and wiring.
+What is the best temperature for hydroponic tomatoes?,Tomatoes prefer air temperature 70-80°F (21-27°C) during day and 60-70°F (15-21°C) at night with water temperature 65-75°F (18-24°C).
+How do I pollinate hydroponic tomatoes?,Gently shake flowers daily or use a small brush to transfer pollen between flowers as hydroponic tomatoes lack natural pollinators.
+What causes blossom end rot?,Blossom end rot is caused by calcium deficiency or inconsistent watering. Maintain consistent moisture and ensure adequate calcium in nutrients.
+How do I prune hydroponic plants?,Remove dead leaves thin overcrowded growth and prune to maintain plant shape. Use clean sharp tools to prevent disease transmission.
+What is the best growing medium for strawberries?,Strawberries grow well in coconut coir perlite or rockwool providing good drainage and root support for their shallow root system.
+How do I propagate herbs hydroponically?,Take 4-6 inch cuttings remove lower leaves place in water or growing medium and maintain high humidity until roots develop.
+What causes leaf curling in hydroponic plants?,Leaf curling can indicate overwatering nutrient toxicity pH imbalance or pest damage. Check all system parameters and inspect for insects.
+How do I set up automated nutrient dosing?,Use peristaltic pumps connected to timers or controllers to automatically add nutrients based on EC levels and plant growth stage.
+What is the difference between TDS and EC?,TDS (Total Dissolved Solids) measures all dissolved substances while EC (Electrical Conductivity) measures ion concentration. EC is more accurate for hydroponics.
+How do I prevent system clogs?,Use quality nutrients clean filters regularly avoid organic matter in solution and flush the system between crop cycles.
+What is the best way to germinate seeds for hydroponics?,Use rockwool cubes keep moist but not soaked maintain 70-80°F temperature and provide 16-18 hours of light daily.
+How do I calculate nutrient ratios?,Use the N-P-K numbers on nutrient bottles. For vegetative growth use 3-1-2 ratio; for flowering use 1-3-2 ratio.
+What causes white spots on hydroponic leaves?,White spots often indicate powdery mildew nutrient splash or mineral deposits. Improve air circulation and check for fungal issues.
+How do I set up a vertical hydroponic system?,Use stacked growing towers with NFT channels or DWC buckets ensuring proper lighting at each level and adequate nutrient flow.
+What is the best pH for hydroponic peppers?,Peppers prefer pH 5.8-6.2 slightly more acidic than other plants to optimize nutrient uptake and prevent blossom end rot.
+How do I treat root aphids?,Use beneficial nematodes hydrogen peroxide solution or pyrethrin-based insecticides. Improve system cleanliness and consider system restart if severe.
+What causes slow root development?,Slow root development results from low oxygen cold water temperature high EC levels or poor water quality. Check all parameters.
+How do I set up a commercial hydroponic operation?,Plan for scale invest in quality equipment implement monitoring systems establish protocols and consider automation for efficiency.
+What is the best way to store harvested hydroponic produce?,Store in cool humid conditions (32-40°F 95% humidity) use proper containers and consume within 1-2 weeks for best quality.
+How do I calculate lighting requirements?,Provide 30-50 watts per square foot of growing area using LED lights or 50-80 watts with HPS/MH lights adjusted for plant type.
+What causes nutrient solution to turn cloudy?,Cloudy solution indicates bacterial growth algae or nutrient precipitation. Clean the system check pH and use fresh nutrients.
+How do I set up a recirculating system?,Design with proper flow rates use quality pumps include filters and ensure adequate drainage back to the main reservoir.
+What is the best way to monitor plant health?,Check daily for color changes growth rate root condition and system parameters. Keep detailed records of all observations.
+How do I treat spider mites?,Use predatory mites insecticidal soap or neem oil. Increase humidity to 60-70% and improve air circulation to discourage mites.
+What causes nutrient solution to smell bad?,Bad odors indicate anaerobic bacteria root rot or organic matter decomposition. Clean the system and improve aeration immediately.
+How do I set up a flood and drain system?,Use a timer-controlled pump to flood grow trays for 15-30 minutes then allow complete drainage back to the reservoir.
+What is the best growing medium for microgreens?,Microgreens grow well in coconut coir hemp mats or specialized microgreen growing pads that provide good moisture retention.
+How do I calculate system capacity?,Calculate based on plant spacing root space requirements and nutrient solution volume needed for your chosen system type.
+What causes leaf drop in hydroponic plants?,Leaf drop indicates stress from temperature changes nutrient imbalance overwatering or disease. Check all environmental factors.
+How do I set up a continuous harvest system?,Plant new seeds every 1-2 weeks use multiple growing areas and maintain consistent environmental conditions for steady production.
+What is the best way to clean hydroponic equipment?,Use hydrogen peroxide bleach solution or commercial sanitizers. Rinse thoroughly and allow to dry completely before reuse.
+How do I treat thrips?,Use sticky traps beneficial insects like predatory mites or spinosad-based insecticides. Remove heavily infested plant material.
+What causes nutrient solution to foam?,Foaming indicates high organic content bacterial growth or surfactant buildup. Clean the system and use quality nutrients.
+How do I set up a deep water culture system?,Use containers with net pots air stones for oxygenation and maintain nutrient solution level just below the net pot bottoms.
+What is the best way to harden off hydroponic seedlings?,Gradually reduce humidity increase air circulation and expose to natural light conditions over 7-10 days before transplanting.
+How do I calculate nutrient costs?,Factor in nutrient concentration plant requirements and system size. Most systems use 1-2 gallons of nutrients per month per plant.
+What causes yellowing between leaf veins?,Interveinal yellowing indicates iron or magnesium deficiency. Check pH levels and ensure micronutrients are available in the solution.
+How do I set up a wick system?,Use absorbent wicks to draw nutrient solution from reservoir to growing medium providing passive nutrient delivery to plant roots.
+What is the best way to maintain system hygiene?,Clean between crops use quality water avoid organic matter monitor pH/EC daily and implement proper sanitation protocols.
+How do I treat whiteflies?,Use yellow sticky traps beneficial insects like Encarsia wasps or insecticidal soap. Improve air circulation and remove infested leaves.
+What causes nutrient solution to turn green?,Green solution indicates algae growth from light exposure. Cover reservoirs reduce light and clean the system thoroughly.
+How do I set up a multi-tier system?,Design with proper spacing ensure adequate lighting at each level use quality pumps for nutrient delivery and maintain consistent flow rates.
+What is the best way to monitor nutrient levels?,Test EC and pH daily observe plant health and adjust nutrient concentration based on growth stage and plant response.
+How do I treat mealybugs?,Use cotton swabs dipped in alcohol beneficial insects like ladybugs or systemic insecticides. Isolate infested plants immediately.
+What causes stunted root growth?,Stunted roots result from low oxygen high EC cold temperatures or poor water quality. Check all system parameters systematically.
+How do I set up a commercial NFT system?,Design with proper slope (1-2%) adequate flow rates quality channels and backup systems for reliable operation.
+What is the best way to store nutrients?,Store in cool dark place keep containers sealed avoid temperature extremes and use within expiration dates for optimal results.
+How do I treat scale insects?,Use horticultural oil beneficial insects or systemic insecticides. Remove heavily infested plant material and improve plant health.
+What causes nutrient solution to become acidic?,Acidification occurs from plant uptake bacterial activity or poor water quality. Monitor pH daily and adjust with pH up solution.
+How do I set up a hobbyist system?,Start with simple DWC or NFT use quality components begin with easy plants and gradually expand as you gain experience.
+What is the best way to prevent disease?,Maintain clean systems use quality water monitor plant health implement proper spacing and avoid overwatering or overcrowding.
+How do I treat bacterial infections?,Remove infected plants clean the system thoroughly use beneficial bacteria and improve environmental conditions to prevent recurrence.
+What causes nutrient solution to become alkaline?,Alkalization occurs from hard water poor nutrient quality or system contamination. Test water source and use pH down solution.
+How do I set up a research system?,Design for data collection use precise monitoring equipment implement controlled variables and maintain detailed records of all parameters.
+What is the best way to optimize yields?,Provide optimal environmental conditions use quality nutrients maintain proper plant spacing and implement consistent monitoring and adjustment protocols.
+Can I use borehole water for hydroponics?,Test EC and hardness first; EC < 0.5–0.8 mS/cm is ideal—otherwise use RO or blend with RO/rainwater and add Cal‑Mag.
+Is hydroponics viable in hot African climates?,Yes—use 30–50% shade cloth strong airflow evaporative cooling night lighting schedules and keep solution 18–22°C.
+How do I deal with frequent power cuts?,Add DC/battery air pumps a small UPS for main pumps gravity returns and alarms; prioritize dissolved oxygen.
+Which African leafy greens grow well hydroponically?,Sukuma wiki (kale) amaranth (terere) cowpea leaves (ugu) spinach and moringa seedlings perform well with pH 5.8–6.2.
+What EC for sukuma wiki/kale?,Target EC 1.6–2.2 mS/cm vegetative; keep pH 5.8–6.2 and prune regularly to promote new leaves.
+Can I grow amaranth hydroponically?,Yes—EC 1.4–1.8 mS/cm pH 5.8–6.2; harvest young leaves frequently to avoid lignification.
+Are solar pumps practical?,Yes—size panels to 2–3× pump watt draw include a small battery and run DC air pumps for resilience.
+How do I keep reservoirs cool without a chiller?,Insulate tanks shade lines bury or place tanks on cool floors add frozen water bottles and run lights at night.
+What crops sell best in African cities?,Lettuce mixes basil spinach kale strawberries and culinary herbs for restaurants hotels and supermarkets.
+Can I mix my own nutrients from farm inputs?,Yes using calcium nitrate potassium nitrate monopotassium phosphate magnesium sulfate and a micronutrient mix—measure EC and keep pH 5.8–6.2.
+Where can I source coco peat?,From coconut processors or agro-dealers; buffer with Ca/Mg and rinse until runoff EC is low before use.
+How do I treat saline coastal water?,Use RO blend with rainwater or choose tolerant crops (e.g. basil) at lower EC; avoid sodium-heavy sources.
+Is rainwater good for hydroponics?,Yes—collect with first-flush diverters store covered filter and remineralize slightly with Cal‑Mag for stability.
+How do I prevent mosquitoes in reservoirs?,Keep all water covered use insect screens on vents fix light leaks and use BTi tablets where safe.
+How do I filter muddy/brown water?,Use sediment prefilters (cloth → sand/carbon → 5–50 µm cartridge) before nutrients; avoid clogging emitters.
+What about food safety regulations when selling?,Follow local GAP/HACCP guidance; use clean water sanitize tools track lots and comply with market standards.
+How do I start strawberries in warm climates?,Use day-neutral varieties strong airflow EC 1.2–1.6 early then 1.6–2.0 pH 5.6–6.0; keep solution cool.
+Can I use jerrycans and buckets to build systems?,Yes—food-grade HDPE containers make good DWC/NFT reservoirs; keep opaque and sealed from light.
+What shade cloth rating should I use?,30–50% for greens; 20–30% for tomatoes/peppers depending on PPFD and local irradiance.
+How do I manage high humidity in rainy seasons?,Increase airflow and dehumidification widen plant spacing prune excess foliage and water early in the day.
+Are indigenous vegetables profitable?,Yes—fresh pesticide-safe AIVs (amaranth cowpea leaves spider plant) have strong urban demand at premium prices.
+What is an affordable monitoring setup?,Use a reliable pH/EC combo meter digital thermometers for water/air hygrometer and a simple light meter or PPFD map.
+How do I control fall armyworm on leafy crops?,Scout regularly use biologicals (Bt) exclude with insect netting and avoid broad-spectrum sprays near harvest.
+How do I control Tuta absoluta in tomatoes?,Use pheromone traps exclusion netting sanitation and targeted biologicals; keep humidity/leaf-wetness managed.
+Can I irrigate with harvested rainwater only?,Yes if storage is adequate; add covers screens periodic filtration and maintain nutrient consistency with EC checks.
+How do I minimize water use?,Choose recirculating systems (NFT/RDWC) cover reservoirs reduce evaporation and match crop density to system size.
+Can I run hydroponics off-grid?,Yes with solar DC pumps battery-backed air and gravity returns; prioritize low-wattage continuous aeration.
+What EC for cowpea leaves (ugu)?,Aim EC 1.4–1.8 mS/cm pH 5.8–6.2; harvest tender leaves frequently to maintain quality.
+How do I price produce competitively?,Track input costs (nutrients power labor) yield per square meter and local market prices; target premium freshness and hygiene.
+How do I reduce nutrient costs?,Use dry salts in bulk maintain 10–20% runoff (drip) to prevent waste and recirculate with regular resets.
+What’s the best starter system for schools?,Kratky for simplicity or small DWC/NFT kits with clear safety and sanitation protocols.
+Can I blend RO with tap water?,Yes—blend to target baseline EC 0.2–0.4 mS/cm then add nutrients to crop EC; adjust pH after mixing.
+How do I handle leaf miners on greens?,Use fine insect netting yellow sticky cards remove affected leaves and consider neem/biological controls.
+What water testing is essential?,Source water EC pH alkalinity; periodic microbiological tests if selling ready-to-eat leaves.
+How do I market to restaurants?,Offer consistent weekly volumes sample boxes washed and chilled greens and reliable delivery windows.
+Can I grow maize hydroponically?,Not common for grain; hydroponic green fodder (barley/maize) in 6–8 days is feasible for livestock.
+How do I avoid counterfeit ag inputs?,Buy from trusted dealers verify batch/COA for salts/nutrients and test small before scaling.
+What backup should I prioritize first?,Battery-backed air pump for DWC/RDWC; even 30–60 minutes can prevent root suffocation.
+How do I keep records with low budget?,Use paper or simple spreadsheets: daily pH/EC/temp actions taken yields and issues.
+Can I use moringa seed powder to clarify water?,Yes as a flocculant pre-treatment; still filter and sanitize before mixing nutrients.
+Are worms useful in hydroponics?,Avoid adding worms to recirculating systems; use separate vermicompost teas cautiously with filtration (risk of clogs/pathogens).
+How do I handle heat waves?,Reduce PPFD increase shade chill/top off with cool water boost aeration and harvest early mornings.
+What pack sizes do retailers prefer?,Common: 100–250 g clamshells for salad mixes and herbs; confirm with local buyers.
+Can I reuse nutrient solution on soil crops?,Yes if pH/EC are appropriate; avoid discharge to waterways; comply with local regulations.
+How do I plan rainy-season operations?,Protect power and reservoirs from flooding improve drainage and watch for disease pressure from high humidity.
+What simple vertical system can I build?,Stacked grow bags or tower planters with drip rings a small pump and a covered reservoir.
+How do I start with very low capital?,Begin with Kratky jars or buckets; reuse food‑grade containers; focus on lettuce and basil to learn.
+What low‑cost pest exclusion works?,30–50% shade cloth doubles as insect barrier; add fine insect netting on vents and doors.
+How do I sell to hotels?,Offer consistent grades; washed produce; sample menus; weekly delivery calendar; invoice properly.
+What training is essential for staff?,Safe chemical handling; calibration; sanitation SOPs; harvest hygiene; record keeping; basic IPM scouting.
+How do I reduce post‑harvest losses?,Hydrocool leaves harvest early morning pack in vented clamshells maintain cold chain 2–5°C.
+Which herbs are heat tolerant?,Lemongrass thai basil rosemary; manage EC moderate; provide airflow and partial shade.
+Can I grow yams or cassava hydroponically?,Not practical for tuber bulk; consider nursery propagation only; grow in soil for finishing.
+Are bananas feasible hydroponically?,Commercially rare; high space and support needs; focus on leafy greens and herbs for ROI.
+What is a good small farm layout?,Seedling area; veg area; harvest/pack zone; clean chemical storage; clear flow to avoid cross‑contamination.
+How do I set prices for retail?,Cost plus margin; benchmark nearby stores; premium for pesticide‑safe and clean packaging.
+What licenses might I need?,Business registration; food handler or GAP where required; water discharge compliance.
+How do I build trust with buyers?,Reliable delivery; transparent practices; invite inspections; provide batch dates and contact.
+Which cities in Africa value hydroponic greens?,Nairobi Lagos Accra Kigali Johannesburg; target restaurants and health stores.
+How do I schedule plantings for steady supply?,Stagger seeding weekly; maintain multiple age blocks; track cycle times per crop.
+What’s a simple nutrient recipe from salts?,Use CaNO3; KNO3; MKP; MgSO4; plus micros; target EC by crop; adjust pH last.
+How do I buffer coco correctly?,Pre‑soak with Ca/Mg solution; rinse to low runoff EC; then charge with half‑strength nutrients.
+Can I use fish emulsion in hydroponics?,Risk of biofilm and clogs; better in drip with filters; sanitize often; monitor DO.
+What’s the best starter kit for classrooms?,Clear‑lid Kratky totes; EC/pH pens; lettuce seeds; simple LED; printed SOPs.
+How do I prevent theft or tampering?,Lock reservoirs; secure power; fence grow area; limit access; keep logs.
+How do I handle drought periods?,Use closed systems; prioritize shade; mulch soil areas; store rainwater; avoid leaks.
+What local seeds perform well?,Use regionally bred lettuce and kale; heat‑tolerant basil; verify germ rates from local suppliers.
+Can I certify organic with hydroponics?,Rules vary by country; many exclude hydroponics; pursue pesticide‑free or GAP certification instead.
+How do I manage iron deficiency in high pH water?,Use EDDHA iron chelate; lower pH gradually; avoid high bicarbonate sources.
+What is a simple IPM routine?,Weekly scouting; sticky cards; sanitize; remove hotspots; release beneficials where viable.
+How do I estimate water use?,Track daily top‑offs; relate to plant count and climate; improve covers and airflow to cut evaporation.
+Can I integrate rainwater harvesting?,Yes with gutters; first‑flush diverters; covered tanks; periodic lab tests; blend as needed.
+How do I reduce labor?,Use timers and float valves; consolidate reservoirs; simple trellis systems; standardize SOPs.
+What crops for rooftop farms?,Lettuce; basil; spinach; chives; strawberries; ensure wind breaks and safe load limits.
+How do I protect crops from dust?,Install windbreaks; rinse leaves pre‑pack; maintain positive airflow; cover reservoirs tightly.
+How do I choose pump sizes?,Flow rate to fill or feed within target minutes; add 20–30% headroom; check head height charts.
+What backup for solar days with clouds?,Keep a small battery bank; prioritize air pumps; reduce lighting hours temporarily if needed.
+How do I manage waterborne pathogens?,Sanitize between cycles; UV or ozone inline; maintain DO; avoid warm stagnant zones.
+Can I collaborate with restaurants on varieties?,Yes—trial specialty basil and lettuce mixes; agree on volumes; get feedback quarterly.
+How do I avoid bitterness in lettuce?,Keep temps moderate; avoid high EC late; maintain steady moisture; harvest at correct size.
+What is a fair wage for farmhands?,Benchmark local agricultural wages; add training; bonuses for quality; document hours and safety.
+How do I design simple SOPs?,Short step lists for seeding transplant mixing harvest cleaning; include checkboxes and dates.
+What packing labels should include?,Farm name; harvest date; batch ID; weight; storage temp; contact; wash‑ready statement.
+How do I transition from soil to hydro?,Start a pilot; learn nutrient and pH control; compare yields and costs; scale gradually.
+How do I keep birds away from towers?,Use netting and visual deterrents; harvest frequently; avoid exposed ripening fruit.
+Can I compost plant waste?,Yes—separate clean plant matter; avoid nutrient spills; keep bins covered; comply with local rules.
+How do I insure the farm?,Seek small business or crop insurance; document infrastructure; safety protocols; backup plans.
+What’s a simple way to calculate break‑even?,Sum monthly fixed and variable costs; divide by expected kg sold; adjust price or yield to cover.
+How do I benchmark quality?,Use leaf size; color; firmness; brix; shelf life in fridge tests; buyer feedback.
+Which leafy greens grow best in hydroponics?,Lettuce (romaine; butterhead) spinach kale/sukuma wiki swiss chard arugula.
+Which herbs are ideal for hydroponics?,Basil mint cilantro parsley chives dill oregano thyme; heat‑tolerant basil for tropics.
+Which fruiting vegetables suit hydroponics?,Tomatoes cucumbers peppers (bell/chili) eggplant; need trellis/support and higher EC.
+Can I grow strawberries hydroponically?,Yes—perform well in NFT or vertical towers; keep solution cool and ensure pollination.
+Which berries besides strawberries work?,Some growers trial raspberries/blueberries in inert media with drip; more advanced and pH‑sensitive.
+Are root crops good for hydroponics?,Radish and baby carrots can work in deep media beds; large tubers like cassava/yam are impractical.
+Which African indigenous vegetables fit?,Amaranth (terere) cowpea leaves (ugu) African nightshade spider plant—great in NFT/DWC.
+Do brassicas grow well?,Yes—kale pak choi bok choy tatsoi do well; manage EC and airflow to prevent tip burn.
+What salad mixes are popular?,Baby leaf mixes of lettuce spinach arugula chard and herbs for bagged salads.
+Are microgreens suitable?,Yes—sunflower pea shoots radish mustard basil; short cycles 7–14 days on mats/trays.
+Can I grow fodder hydroponically?,Yes—barley maize and wheat fodder in 6–8 days for livestock; high sanitation needed.
+What ornamentals suit hydroponics?,Cut basil mint and some flowers (e.g. roses/gerbera) in advanced systems; requires careful fertigation.
+Do leafy herbs outperform woody herbs?,Usually yes; woody herbs (rosemary thyme) grow slower but succeed with good aeration and light.
+Are cucurbits good candidates?,Cucumbers and some melons can thrive; ensure strong trellising and pollination; manage high nutrient demand.
+Which leafy crops for high heat?,Amaranth water spinach (kangkong) Malabar spinach and heat‑tolerant lettuce cultivars.
+Can I grow medicinal plants?,Aloe and moringa seedlings can be started; leafy medicinal herbs like holy basil thrive hydroponically.
+What about grains?,Hydroponic grain is uncommon for grain harvest; focus on microgreens or fodder applications.
+Can I grow trees hydroponically?,Dwarf fruit trees are challenging and uncommon; hydro is better for seedlings and herbs/greens.
+Which crops are not recommended?,Root/tuber staples (cassava yam potato) tall cereals and woody perennials due to space and support needs.
+What vine crops are best indoors?,Tomatoes and cucumbers with string trellis; peppers on stakes; prune and manage airflow for disease control.
+Which lettuce types do best?,Butterhead and romaine are reliable; crisphead needs cooler temps and careful tip‑burn management.
+Do leafy African nightshades thrive?,Yes—respond well at EC ~1.4–1.8 mS/cm and pH 5.8–6.2 with frequent harvests.
+Can I do hydroponic okra?,Possible in drip/Dutch buckets with trellis; high heat and light needed; prickly foliage requires PPE.
+Are beans/peas feasible?,Bush beans and sugar snap peas can work in drip with supports; ensure pollination and monitor for pests.
+Can I grow cabbage hydroponically?,Yes in drip/NFT with ample spacing; heavy feeders; manage EC 1.8–2.4 and strong airflow.
+Can I grow broccoli hydroponically?,Yes—do well in drip/NFT; cool conditions preferred; manage strong airflow to avoid bolting.
+Can I grow cauliflower hydroponically?,Yes with careful temperature control; needs more time and space than lettuce.
+Can I grow onions hydroponically?,Green onions/scallions are easy; bulb onions possible in media beds with long cycles and cool temps.
+Can I grow garlic hydroponically?,Challenging for full bulbs; better for garlic greens/scapes in media with drip.
+Can I grow potatoes hydroponically?,Not recommended for small setups; better in aeroponics/media barrels; complex and space heavy.
+Can I grow sweet potato hydroponically?,Grow slips easily; full tubers are difficult and space intensive in media/aeroponics.
+Can I grow cassava hydroponically?,Not practical for tuber production; consider nursery propagation only.
+Can I grow yam hydroponically?,Not practical; large tubers and long cycles make it uneconomical for small farms.
+Can I grow carrots hydroponically?,Baby carrots or Nantes types can work in deep media; uniform moisture is critical.
+Can I grow beetroot hydroponically?,Yes in media/NFT; moderate EC; harvest at golf‑to‑tennis ball size.
+Can I grow okra hydroponically?,Yes in Dutch buckets with trellis; high heat and light; handle prickly pods with PPE.
+Can I grow maize/corn hydroponically?,Not practical for grain; fodder in 6–8 days is feasible for livestock.
+Can I grow rice hydroponically?,Generally not; requires flooded conditions and large area—unsuitable indoors.
+Can I grow sorghum or millet hydroponically?,Not for grain in small farms; focus on microgreens/fodder instead.
+Can I grow ginger hydroponically?,Challenging but possible in media/aeroponics; long cycles and disease management needed.
+Can I grow turmeric hydroponically?,Similar to ginger—long cycles; better in large media beds with careful sanitation.
+Can I grow cucumber hydroponically?,Yes—excellent in drip/NFT; string trellis; EC 1.8–2.4; ensure pollination.
+Can I grow watermelon hydroponically?,Possible but space/weight heavy; strong trellis and slings; high light and nutrients required.
+Can I grow melon/cantaloupe hydroponically?,Yes with trellis and pollination; watch for powdery mildew; manage EC and airflow.
+Can I grow pumpkin or squash hydroponically?,Possible but impractical indoors due to space; better outdoors with strong trellis.
+Can I grow eggplant (brinjal) hydroponically?,Yes in Dutch buckets; warm temps; support stems; EC 2.0–2.8.
+Can I grow chili peppers hydroponically?,Yes—perform very well; support branches; increase K during fruiting.
+Can I grow coriander/cilantro hydroponically?,Yes—cooler temps preferred; fast cycles; prevent bolting with moderate PPFD.
+Can I grow parsley hydroponically?,Yes—steady growth in NFT/DWC; moderate EC and good airflow.
+Can I grow rosemary hydroponically?,Yes but slow; prefer drip with well‑aerated media; avoid overwatering.
+Can I grow thyme hydroponically?,Yes—slow woody herb; moderate EC; good airflow and light.
+Can I grow dill hydroponically?,Yes—fast herb for NFT/DWC; prevent lodging with gentle airflow.
+Can I grow blueberries hydroponically?,Challenging due to low pH needs and mycorrhiza; advanced drip in inert media only.
+Can I grow raspberries hydroponically?,Possible in containers with drip; sensitive roots; requires careful fertigation.
+Can I grow bananas or plantains hydroponically?,Not practical indoors; very large plants and long cycles.
+Can I grow citrus hydroponically?,Rare and complex; large containers long cycles; better as potted soil plants.
+Can I grow avocado hydroponically?,Not practical; tree size and long juvenile phase make it uneconomical.
+Can I grow pineapples hydroponically?,Possible in containers with drip but slow; space heavy; niche crop.
+Can I grow mushrooms hydroponically?,No—mushrooms are fungi grown on substrates; not hydroponic systems.
+Can I grow aloe hydroponically?,Nursery propagation possible; mature plants prefer well‑drained media; avoid constant saturation.
+Can I grow moringa hydroponically?,Start seedlings easily; long‑term tree growth unsuitable; transplant to soil when established.
+Can I grow water spinach (kangkong) hydroponically?,Yes—very heat tolerant; thrives in NFT/DWC; frequent harvests.
+Can I grow African nightshade hydroponically?,Yes—responds well at EC 1.4–1.8 and pH 5.8–6.2; harvest regularly.
+Can I grow spider plant (vegetable) hydroponically?,Yes—succeeds in NFT/DWC with moderate EC; popular leafy AIV.
+Can I grow strawberries hydroponically?,Yes—use NFT/towers; cool solution; pollinate; good urban market demand.
+Can I grow lettuce hydroponically?,Yes—ideal beginner crop for NFT/DWC/Kratky; fast cycles; broad market.
+Can I grow spinach hydroponically?,Yes—cooler temps preferred; manage iron availability; steady airflow.
+Can I grow basil hydroponically?,Yes—one of the easiest herbs; prune weekly; manage EC 1.4–1.8.
+Can I grow mint hydroponically?,Yes—vigorous; manage runners; frequent pruning to maintain quality.
+Can I run hydroponics with seawater?,No—salinity and sodium levels are toxic; use fresh water with balanced nutrients.
+Can plants grow hydroponically without light?,No—plants need light energy; use sunlight or grow lights with proper PPFD.
+Can I skip aeration in DWC?,No—roots will suffocate; continuous aeration keeping DO > 6 mg/L is essential.
+Can I use raw sewage as nutrient?,No—severe pathogen risk and legal issues; use clean water and certified nutrients only.
+Can I grow a baobab tree indoors hydroponically?,No—not practical; massive size decades-long cycles and structural requirements.
+Can I grow cocoa trees economically in small hydroponics?,No—long cycles tree size and low ROI make it impractical.
+Can I use engine oil or diesel to control pests in solution?,No—dangerous and toxic; follow IPM and approved controls only.
+Can I run pumps only one hour per day?,No—most systems need continuous flow/aeration; interruptions cause root stress and death.
+Can I mix acid and base concentrates together?,No—risk of violent reaction and precipitation; dilute separately and add one at a time.
+Can I use untested borehole water without checks?,No—test EC pH and contaminants first; unknown alkalinity can ruin nutrition.
+Can I grow tuber staples like yam/cassava efficiently?,No—not in typical small hydroponic setups; space and cycle length are impractical.
+Can I ignore pH and EC management?,No—plants will suffer deficiencies/toxicities; daily or regular monitoring is required.
+Can I reuse pesticide rinse water in my reservoir?,No—contamination risks crop loss and food safety violations.
+Can I disinfect by mixing bleach with acids?,No—this releases toxic chlorine gas; never mix chemicals improperly.
+Can I run a hydroponic system with salty coastal rainwater unfiltered?,No—salt and pollutants require filtration and testing before use.
+Can I grow mushrooms hydroponically?,No—mushrooms need substrates not nutrient solution systems; use mushroom cultivation methods.
+Do I need soil for hydroponics?,No—plants grow in water with plant food and a simple support like sponges or pebbles.
+How much space do I need to start?,A small table or balcony corner is enough for a few lettuce and herbs.
+Will my house smell?,No—clean water and regular cleaning have little to no smell.
+How much time per day does it take?,About 5–10 minutes to check water level and leaves; a longer clean weekly.
+Can I put it on a balcony?,Yes—keep it shaded in very hot hours and protect from heavy rain and wind.
+What happens if power goes out?,Plants can stress; a small backup air pump or moving roots to fresh water helps short outages.
+Can I use normal tap water?,Often yes—let it sit overnight or use a simple filter; avoid very salty water.
+Do I need to be good with technology?,No—a simple bucket system works with basic checks and a small pump.
+Can I use sunlight instead of grow lights?,Yes if you have 4–6+ hours of bright light; avoid midday heat.
+How often do I add water?,Top up a little every day or two; replace fully every week or two.
+How many plants fit in one bucket?,Start with 2–4 small plants so they have room to grow.
+How long until I can eat a salad?,Lettuce can be ready in about 4–6 weeks after planting.
+Is the food safe to eat?,Yes if you use clean water clean tools and wash your harvest.
+Can I grow without bugs?,You can reduce bugs a lot with clean areas nets and regular leaf checks.
+Will it bring mosquitoes?,Keep water covered and moving; use nets—then mosquitoes won’t breed.
+Is it very expensive to start?,No—you can begin with low‑cost containers and a small air pump.
+Can children help?,Yes—kids can help seed check water and harvest with guidance.
+What if leaves turn yellow?,Usually the plant needs food or better light; add fresh mix and give more light.
+Can I start with just one plant?,Yes—start small learn then add more sites over time.
+Do I need special seeds?,No—regular seeds work; look for varieties that say “good for containers.”
+Do I need a greenhouse?,No—many people grow on windowsills balconies or spare rooms.
+Where should I place it indoors?,Near a bright window with gentle airflow; keep pets away from the water.
+Is the system noisy?,A small air pump is a soft hum; place it on foam to reduce noise.
+How often do I clean?,Wipe weekly and do a deeper clean between crops.
+What if I travel for a week?,Use a larger water tank and ask a friend to top up once or twice.
+Does it use a lot of electricity?,No—small pumps and lights use little; costs are like a few phone chargers.
+What about rain on the balcony?,Cover the tank so rain doesn’t dilute the plant food too much.
+Can I use plastic bottles to start?,Yes—cut flip and use like a simple jar garden; keep it shaded from strong sun.
+Do I need internet or an app?,No—paper notes or a simple notebook are enough to track checks.
+Can I mix different plants together?,Yes—keep plants with similar size and light needs in the same system.
+What if the water turns green?,That’s algae from light; cover the tank and clean—keep light out of the water.
+Do I need to add fertilizer?,Yes—plants need plant food; follow the bottle for simple mixing.
+Can I start without tools?,Yes—a spoon a clean bucket and scissors are enough to begin.
+What plant is easiest to try first?,Lettuce is simple and forgiving; basil is also a good first herb.
+Is it safe around pets?,Keep the lid on and wires tidy; place where pets cannot drink the water.
+How do I know plants are happy?,Leaves look firm and green stems stand up new leaves appear each week.
+What if leaves have holes?,Likely insects; remove damaged leaves and use simple soap spray made for plants.
+Can I move the system later?,Yes—turn off pumps lift carefully keep roots wet set back up quickly.
+Do I need special lights?,Sun is fine if bright; if indoors and dark a small grow light helps.
+How do I save money on power?,Use energy saving lights run lights at night in hot places keep pumps small.
+Can I grow in a classroom?,Yes—small systems teach science and food skills; keep safety rules simple.
+How do I know when to harvest?,Pick leaves when they are big enough to eat do not strip the plant bare.
+Can I plant seeds straight in the system?,Start in small cubes or sponges first then move when roots show.
+What if water level drops fast?,Plants are drinking more; add clean water and check for any leaks.
+How often do I change the water?,Every one to two weeks or sooner if it smells or looks dirty.
+Can I use kitchen sponges?,Yes if clean and plain; avoid scented or treated sponges.
+How do I wash the salad?,Rinse in cool clean water drain well keep in the fridge in a box.
+Can I share with neighbors?,Yes—trade extra herbs for help topping up water when you travel.
+Will rain water help?,Yes—collect and cover it; use a filter cloth to keep dirt out.
+What if I do everything wrong?,Plants are tough; change to fresh water and plant food and try again.
+Do I need to measure numbers?,Not at first; just watch leaves water level and general plant health.
+What if roots look brown?,Could be stained from food or too little air; add more bubbles and fresh water.
+Can I put fish in the tank?,Not in this setup; fish need different care and water balance.
+Can I grow flowers for my table?,Yes—try marigold and small daisies; they like bright light.
+How do I keep it tidy?,Wipe spills tie cables and keep a small cloth and bin close by.
+Can I grow during school holidays?,Yes with a bigger tank or a helper who can fill water once.
+How do I explain it to family?,Say plants drink a mix of water and food and we keep it clean and bright.
+Can I paint the bucket?,Yes—use a dark non toxic paint outside to block light from the water.
+What if the pump stops at night?,In the morning top up water and restart; plants usually recover if short.
+Can I grow all year?,Yes indoors with light; outdoors follow the season avoid extreme heat.
+What if leaves taste bitter?,Grow in cooler spots harvest younger and avoid very strong light late in the day.
+What should I buy first?,Seeds a clean container with lid small air pump and plant food.
+Can I reuse supermarket containers?,Yes—wash well make a lid keep light out of the water.
+Do I need special clothes?,No—clean hands and simple gloves are enough for harvest days.
+How do I keep ants away?,Seal food wipe spills and use safe ant baits away from plants.
+Can I grow only with rain light by the window?,Yes if it’s bright for many hours; turn plants so they grow straight.
+What if water splashes on leaves?,Wipe gently and adjust flow so water stays in the tank.
+How do I stop leaks?,Tighten fittings keep tubes short and test with plain water first.
+Can I use boiled water?,Let it cool first; boiling does not remove salts but can make it cleaner.
+Is metal container okay?,Prefer food‑safe plastic; many metals can rust or affect water.
+How do I keep the lid from sagging?,Use thicker plastic or add a simple support under the lid.
+Can I put the system on the floor?,Yes but keep pets away and avoid hot spots next to appliances.
+What if leaves droop at midday?,It may be hot or too bright; add shade and check water level.
+Can I grow for gifts?,Yes—fresh herbs in small jars make great gifts with care notes.
+How do I remember checks?,Set a daily phone reminder to look at water and leaves.
+Can I use tap water with chlorine?,Let it sit overnight or use a small carbon filter.
+What if the water smells?,Change water clean parts keep light out and use fresh plant food.
+How do I start seeds easily?,Wet a small sponge add a seed keep warm and lightly covered.
+Can I plant store‑bought herb cuttings?,Yes—trim bottom leaves put in sponge keep moist until roots show.
+How do I avoid waste?,Harvest often share extra and mix only the water you need.
+Can I grow in a shared room?,Yes—keep tidy quiet pump and label the bucket.
+What if I drop tools in the tank?,Remove rinse and replace water if dirty; keep a spare spoon.
+How do I keep track of progress?,Take weekly photos and jot simple notes like “added water.”
+Can I taste a leaf early?,Yes—pick one or two; do not strip all the big leaves at once.
+How do I ask shops to buy my greens?,Bring a clean sample price list and promise a regular day for delivery.
+What if bugs keep coming back?,Clean area remove sick leaves and try netting on windows and doors.
+Can I grow spicy peppers as a beginner?,Start with mild peppers; they need supports and more space than lettuce.
+What if I have only one plug socket?,Use a small power strip with surge protection and tidy cables.
+Can I decorate the bucket?,Yes—stickers or paint outside; keep inside clean and food‑safe.
+How do I know water is too hot?,If the tank feels warm to the hand add shade or cool water bottles.
+Can I start today without buying anything?,Try a jar Kratky with clean jar sponge water and a few seeds.
+Can I grow without electricity?,Yes—use Kratky (no pumps). Keep water covered and place in bright light.
+What if my water is very hard?,Start with rainwater or mix half rainwater and half tap; keep light out.
+Can I grow in very hot places?,Yes—add shade in midday move lights to night and cool the water.
+How loud is a normal setup?,About like a small fan; placing pumps on foam makes it quieter.
+Do I need to stir the water?,Gently mix when you add plant food; otherwise let the bubbles circulate it.
+Can I reuse the same water forever?,No—change it every 1–2 weeks to keep plants healthy and fresh.
+What if I overfill the tank?,Leaves may get wet; remove some water and keep the lid above the water line.
+Can I keep the system by a window?,Yes—avoid hot sun at midday and keep the tank shaded from light.
+Is it okay if roots are brown?,Light tea color is fine; slimy smelly roots mean you should clean and refresh.
+Can I grow in a small hostel room?,Yes—one bucket and a small light is enough; keep it tidy and quiet.
+What if I forget a day?,Plants usually forgive a day; add water and check leaves the next morning.
+How do I make it look neat?,Use a dark bucket short tidy tubes and a label for the plant names.
+Can I gift starter kits?,Yes—include a small guide: add water add food place in bright light.
+What if I spill plant food?,Wipe with water wash hands and keep bottles closed and out of reach of kids.
+What plant food for lettuce?,Balanced veg nutrients; EC 1.2–1.8 mS/cm; pH 5.8–6.2; add calcium for tip burn control.
+What plant food for spinach?,Veg formula; EC 1.6–2.2; pH 5.8–6.2; ensure iron availability with correct pH.
+What plant food for kale or sukuma wiki?,Nitrogen forward veg mix; EC 1.6–2.2; pH 5.8–6.2; steady calcium and magnesium.
+What plant food for basil?,N 3‑1‑2 style; EC 1.4–1.8; pH 5.8–6.2; add Cal‑Mag lightly.
+What plant food for mint?,Balanced veg mix; EC 1.2–1.8; pH 5.8–6.2; prune often to keep flavor.
+What plant food for cilantro?,Mild veg mix; EC 1.2–1.6; pH 5.8–6.2; keep cooler to avoid bolting.
+What plant food for tomatoes?,Veg stage EC 1.8–2.5; fruiting EC 2.5–3.5; pH 5.8–6.2; increase potassium and calcium.
+What plant food for cucumbers?,EC 1.8–2.4; pH 5.8–6.2; higher potassium and magnesium during fruiting; strong calcium support.
+What plant food for peppers?,EC 2.0–3.0; pH 5.8–6.2; boost potassium in bloom and fruit; maintain calcium to prevent rot.
+What plant food for eggplant?,EC 2.0–2.8; pH 5.8–6.2; balanced K; steady calcium and magnesium.
+What plant food for strawberries?,EC 1.2–2.0; pH 5.6–6.0; moderate nitrogen; good potassium; calcium for firmness.
+What plant food for amaranth leaves?,EC 1.4–1.8; pH 5.8–6.2; balanced veg mix; harvest young.
+What plant food for cowpea leaves (ugu)?,EC 1.4–1.8; pH 5.8–6.2; gentle nitrogen; maintain calcium and magnesium.
+What plant food for African nightshade?,EC 1.4–1.8; pH 5.8–6.2; balanced mix; ensure iron availability.
+What plant food for spider plant vegetable?,EC 1.4–1.8; pH 5.8–6.2; balanced veg nutrients; frequent light harvests.
+What plant food for okra?,EC 1.8–2.4; pH 5.8–6.2; higher potassium; warm conditions help uptake.
+What plant food for cabbage?,EC 1.8–2.4; pH 5.8–6.2; steady calcium; avoid excessive nitrogen late.
+What plant food for pak choi or bok choy?,EC 1.4–2.0; pH 5.8–6.2; gentle nitrogen; watch for tip burn.
+What plant food for microgreens?,Very mild solution; EC 0.4–0.8; pH 5.8–6.2; many can grow on water only.
+What does Nitrogen (N) do for plants?,Drives leafy growth and green color; too much can make weak soft leaves.
+What does Phosphorus (P) do?,Helps roots and early growth; too high can block micronutrient uptake.
+What does Potassium (K) do?,Supports strong stems flowering and fruit quality; balances water movement in plants.
+Why is Calcium (Ca) important?,Builds cell walls and prevents tip burn and blossom end rot; moves with steady transpiration.
+Why is Magnesium (Mg) important?,Central to chlorophyll and photosynthesis; yellowing between veins suggests low Mg.
+What NPK is best for lettuce?,Gentle veg ratio like 3‑1‑2 or 2‑1‑2; add Ca for tip burn prevention; steady Mg for color.
+What NPK for spinach?,Balanced veg 3‑1‑2; ensure iron availability; keep Ca/Mg steady for strong leaves.
+What NPK for kale/sukuma wiki?,3‑1‑2 during veg; avoid very high N late; maintain Ca/Mg for leaf strength.
+What NPK for basil?,3‑1‑2 early; can shift slightly higher N for bushy growth; maintain Ca/Mg for flavor and structure.
+What NPK for tomatoes?,Veg: 3‑1‑2; Bloom/Fruit: 2‑1‑3 or 1‑1‑2 with higher K; high Ca prevents blossom end rot; Mg supports photosynthesis.
+What NPK for cucumbers?,Veg/Bloom: around 2‑1‑3 emphasizing K; steady Ca for fruit shape; Mg for leaf health.
+What NPK for peppers?,Veg: 3‑1‑2; Bloom/Fruit: 2‑1‑3; strong Ca prevents blossom end rot and improves firmness; Mg keeps leaves green.
+What NPK for eggplant?,Veg: 3‑1‑2; Fruit: 2‑1‑3; support with Ca/Mg for skin firmness and leaf health.
+What NPK for strawberries?,Low‑moderate N; around 2‑1‑3 during flowering/fruit; Ca for firmness; Mg for color.
+What NPK for pak choi/bok choy?,Gentle 2‑1‑2 to 3‑1‑2; adequate Ca to reduce tip burn; Mg for green leaves.
+What NPK for amaranth leaves?,2‑1‑2 to 3‑1‑2; avoid excessive N late; maintain Ca/Mg balance.
+What NPK for cowpea leaves (ugu)?,2‑1‑2; moderate N for tender leaves; steady Ca/Mg for texture.
+How do I add Calcium safely?,Use Cal‑Mag or calcium nitrate; add separately from phosphates; never mix concentrates together.
+How do I add Magnesium?,Use Cal‑Mag or Epsom salt (magnesium sulfate) lightly; dissolve fully before adding to the tank.
+How do I know if I need more Ca or Mg?,Tip burn or blossom end rot suggests Ca; interveinal yellowing suggests Mg; keep pH 5.8–6.2.
