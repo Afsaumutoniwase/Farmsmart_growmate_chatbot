@@ -1,0 +1,14 @@
+transformers>=4.25.0
+torch>=2.0.0
+sentencepiece
+nltk
+scikit-learn
+sacrebleu 
+pandas>=1.5.0
+numpy>=1.21.0
+streamlit>=1.28.0
+accelerate
+datasets
+rouge-score
+evaluate
+wandb
