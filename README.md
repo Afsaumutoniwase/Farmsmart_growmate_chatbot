@@ -1,237 +1,202 @@
-# 🌱 GrowMate: FLAN-T5 Hydroponic Chatbot
 
-**Advanced AI Hydroponic Assistant for Rwanda - Powered by FLAN-T5**
+# GrowMate: FLAN-T5 Hydroponic Chatbot
 
-*An intelligent AI-powered chatbot specialized in hydroponic farming assistance, built with Google's FLAN-T5-base model. Features advanced instruction-following capabilities and comprehensive hydroponic knowledge for streamlined farming guidance.*
-
----
-
-## Project History & Context
-
-### **FarmSmart Vision: Transforming Rwanda's Agriculture**
-
-Agricultural productivity in Rwanda is constrained by unpredictable weather, declining soil fertility, and inefficient use of water and nutrients. **FarmSmart** proposes the integration of hydroponic farming systems with machine learning (ML) to increase yields, optimize resource usage, and promote sustainable practices.
-
-Our system leverages sensor data and predictive algorithms to recommend real-time optimal growing conditions. Theoretical modeling shows potential for a **20–30% yield increase** and **40% reduction in water use** over traditional methods.
-
-### **Target Impact & Partnerships**
-- **Target Audience**: Smallholder farmers in peri-urban areas of Rwanda
-- **Strategic Partnerships**: Green City Kigali and RYAF (Rwanda Youth in Agribusiness Forum)
-- **Expected Reach**: 70% of Rwanda's population employed in agriculture
+GrowMate is a hydroponic farming chatbot designed for Rwanda, built using the FLAN-T5-base model. It provides conversational guidance and answers to hydroponic farming questions, tailored for local conditions.
 
 ---
 
-## Introduction and Motivation
 
-Agriculture employs over **70% of Rwanda's population**, yet faces increasing threats from land degradation, climate change, and inefficient traditional practices. There is an urgent need for scalable, tech-driven agricultural solutions.
+## Project Context
 
-**Hydroponics** offers a soil-free, water-efficient alternative to traditional farming. FarmSmart leverages AI and localized environmental data to help farmers make intelligent, data-driven decisions that lead to:
-
-**Higher crop yields** (up to 10x improvement potential)  
-**Reduced resource consumption** (40% water savings)  
-**Greater climate resilience**  
-**Youth engagement in agri-tech**  
+GrowMate supports smallholder farmers in Rwanda by providing instant, expert-level hydroponic farming guidance. The chatbot is optimized for local farming conditions and practices.
 
 ---
 
-## Problem Statement & Solution
 
-### **The Challenge**
-While AI-powered hydroponics have shown impressive global results—with up to **10x yield improvements** in studies like Shreenidhi et al. (2021) and FAO trials (2025)—they remain inaccessible to smallholder farmers due to high costs and technical complexity.
+## Motivation
 
-Most systems (e.g., AgriLyst, CropX) target large-scale operations, leaving behind farmers in Rwanda, where hydroponics remains manual, expensive, and hard to scale.
-
-### **FarmSmart Solution**
-**FarmSmart addresses this gap** with an AI-enhanced hydroponic platform, tailored to Rwanda's context. By integrating affordable IoT sensors with ML models, FarmSmart enables real-time, precision farming for smallholders—improving yields, resource use, and climate resilience.
+Hydroponics is a soil-free, water-efficient alternative to traditional farming. GrowMate helps farmers make informed decisions for better yields, resource savings, and climate resilience.
 
 ---
 
-## GrowMate: The AI Companion Component
 
-**GrowMate** is the intelligent chatbot component of the broader FarmSmart platform, designed to provide instant, expert-level hydroponic farming guidance to users at any skill level. The system includes data preprocessing, model fine-tuning, evaluation metrics, and a comprehensive web interface for maximum accessibility.
+## Solution
 
-### **GrowMate Key Features**
-
-- **Advanced AI**: Fine-tuned T5 transformer model on hydroponic Q&A data
-- **Minimal Interface**: Clean, focused chatbot with automatic model loading
-- **Single-File App**: Streamlined 130-line application for easy deployment
-- **Auto-Loading**: Automatically detects and loads trained model
-- **Rwanda-Context**: Optimized for local farming conditions and practices
-- **Professional Design**: Clean, academic-ready interface without distractions
+GrowMate provides a simple, accessible chatbot for hydroponic farming questions. It is designed for smallholder farmers and agricultural extension workers in Rwanda.
 
 ---
+
+
+## GrowMate Features
+
+- FLAN-T5-base model fine-tuned for hydroponic Q&A
+- Minimal, clean chat interface
+- Automatic model loading
+- Rwanda context optimization
+- Professional, distraction-free design
+
+---
+
 
 ## Repository Structure
 
 ```
-FarmSmart_Companion_chatbot/
+Farmsmart_growmate_chatbot/
 ├── data/
-│   └── hydroponic_FAQS.csv          # Hydroponic Q&A dataset (625 rows)
+│   └── hydroponic_FAQS.csv          # Hydroponic Q&A dataset
 ├── notebooks/
-│   └── growmate.ipynb              # Complete model training & evaluation notebook
-├── trained_model/               # Your fine-tuned model (created by notebook)
-│   ├── config.json                 # Model configuration
-│   ├── model.safetensors          # Model weights
-│   ├── tokenizer_config.json      # Tokenizer settings
-│   └── ...                        # Other model files
-├── app.py                          # Minimal Streamlit chatbot (130 lines)
-│                                   # Automatically loads your trained model
-│                                   # Clean chat interface
-│                                   # Essential chatbot functionality
-│                                   # Professional, minimal design
-│                                   # Perfect for academic submission
-├── requirements.txt             # Python dependencies (minimal & clean)
-└── README.md                    # This comprehensive guide with experiment results
+│   └── flan_t5_hydroponic_chatbot.ipynb  # Model training & evaluation notebook
+├── trained_model/                   # Fine-tuned model files
+├── app.py                           # Streamlit chatbot app
+├── requirements.txt                 # Python dependencies
+└── README.md                        # Project guide
 ```
-
-**Note**: The `trained_model/` folder is created automatically when you run the notebook training cells.
 
 ---
 
+
 ## Quick Start Guide
 
-### **Step 1: Environment Setup**
+### 1. Environment Setup
 
 ```bash
-# Clone or download the repository
-cd FarmSmart_Companion_chatbot
-
-# Install all dependencies (includes AI/ML packages)
+cd Farmsmart_growmate_chatbot
 pip install -r requirements.txt
-
-# Verify installation
-python -c "import streamlit, transformers, tensorflow; print('FarmSmart GrowMate Ready!')"
 ```
 
-### **Step 2: Train Your AI Model**
+### 2. Train the Model
 
-#### **Notebook Training (Recommended)**
-Train a fine-tuned model for 11.5% better performance:
+Open and run all cells in `notebooks/flan_t5_hydroponic_chatbot.ipynb` to process data and train the model. The trained model will be saved to `trained_model/` automatically.
 
-```bash
-# Open and run the training notebook
-jupyter notebook notebooks/growmate.ipynb
-# OR use VS Code with the notebook
-```
 
-**Training Process:**
-1. **Run all cells** to process data and train models
-2. **Save your model** using the model saving cell
-3. **Your trained model** will be automatically saved to `/trained_model/`
-
-### **Step 3: Launch GrowMate Application**
-
-#### **Minimal Web Application**
-Clean, focused chatbot perfect for academic submission:
+### 3. Launch the Chatbot
 
 ```bash
 streamlit run app.py
 # Opens browser at http://localhost:8501
 ```
 
-**Smart Model Loading**: 
-- **Automatically loads your trained model** if available
-- **Shows 11.5% performance improvement** when using fine-tuned model
-- **Falls back to base model** if no trained model found
-- **Displays model status** during loading
-
-**Minimal Features**: 
-- Clean chat interface without distractions
-- Essential chatbot functionality only
-- Professional appearance for academic review
-- Auto-loading eliminates manual setup
-- Rwanda agricultural context maintained
-
-### **Step 3: Using GrowMate**
-
-1. **Auto-Loading**: Model loads automatically on startup
-2. **Ask Questions**: Use the chat interface for hydroponic guidance
-3. **Clean Interface**: Focus on conversation without distractions
-4. **Professional Design**: Perfect for academic demonstration
+The app automatically loads your trained model if available. Use the chat interface to ask hydroponic farming questions.
 
 ---
 
-## Academic & Technical Excellence
 
-This implementation achieves **exemplary** standards across all evaluation criteria for agricultural technology projects:
+## Model Training & Evaluation
 
-### **Domain Alignment & Data Quality** (Perfect)
-- **Rwanda-Specific Dataset**: 625 hydroponic Q&A pairs covering local farming conditions
-- **Clean Processing**: CSV formatting, text normalization, duplicate removal
-- **Proper Splits**: 80/10/10 train/validation/test with stratification
+The notebook covers:
+- Data loading and cleaning
+- FLAN-T5-base model setup
+- Data preprocessing for instruction tuning
+- Model training and evaluation
+- Saving the trained model for deployment
 
-### **AI Model Implementation & Fine-tuning** (Excellent)
-- **Modern Architecture**: T5-small transformer for generative Q&A
-- **Hyperparameter Tuning**: Systematic experiments with learning rate, batch size, epochs
-- **Robust Training**: PyTorch implementation with proper tokenization and data pipelines
 
-### **Hyperparameter Optimization & Performance Analysis** (Exemplary)
+## Parameter Tuning Experiments
 
-#### **🔬 Systematic Hyperparameter Exploration**
+This section tracks systematic hyperparameter optimization experiments to find the best configuration for the hydroponic chatbot training.
 
-A thorough exploration of hyperparameters was conducted with clear documentation of adjustments made, resulting in significant performance improvements through validation metrics.
+### **Experiment Tracking Table**
 
-**Experimental Setup:**
-- **Dataset**: 625 hydroponic Q&A pairs (499 train, 63 val, 63 test)
-- **Model**: T5-small transformer (PyTorch implementation)
-- **Optimization**: Multiple hyperparameters tuned systematically
-- **Metrics**: Validation loss as primary performance indicator
+| Exp # | Date | Epochs | Learning Rate | Batch Size | Grad Accum | Warmup | Weight Decay | Scheduler | Train Loss | Val Loss | ROUGE-1 | ROUGE-2 | Status | Notes |
+|-------|------|--------|---------------|------------|------------|---------|-------------|-----------|------------|----------|---------|---------|---------|--------|
+| 1 | 2024-10-XX | 12 | 1e-5 | 2 | 4 | 100 | 0.01 | linear | 4.1787 | 3.7158 | 0.1667 | 0.0162 | ✅ Baseline | Original configuration |
+| 2 | 2024-10-XX | 25 | 3e-5 | 4 | 2 | 200 | 0.02 | cosine | TBD | TBD | TBD | TBD | 🔄 Running | Optimized parameters |
 
-#### **Experiment Results Table**
+### **Parameter Configuration Details**
 
-| Experiment | Batch Size | Learning Rate | Epochs | Train Loss | Val Loss | Improvement vs Baseline |
-|------------|------------|---------------|--------|------------|----------|------------------------|
-| **1 (Baseline)** | 8 | 5e-5 | 1 | 4.1377 | **1.2449** | 0.0% (baseline) |
-| **2** | 16 | 3e-5 | 1 | 8.3157 | 2.2133 | -77.8% (worse) |
-| **3 (Best)** | 8 | 1e-4 | 1 | 2.9726 | **1.1890** | **+4.5%** |
-| **Extended Training** | 8 | 1e-4 | 2 | 1.3036 | **1.1013** | **+11.5%** |
+#### **Experiment 1 - Baseline (Original)**
+- **Model**: FLAN-T5-base (247M parameters)
+- **Dataset**: 625 hydroponic Q&A pairs (437 train, 94 val, 94 test)
+- **Training Config**:
+  - Epochs: 12
+  - Learning Rate: 1e-5 (linear schedule)
+  - Batch Size: 2, Gradient Accumulation: 4 (effective batch = 8)
+  - Warmup: 100 steps
+  - Weight Decay: 0.01
+- **Results**:
+  - Training Loss: 4.1787 (higher than target < 2.0)
+  - Validation Loss: 3.7158
+  - Test ROUGE-1: 0.1667 (below target > 0.35)
+  - Test ROUGE-2: 0.0162 (below target > 0.08)
+- **Assessment**: Moderate quality, needs improvement
 
-#### **Key Findings & Performance Improvements**
+#### **Experiment 2 - Optimized Parameters (Current)**
+- **Model**: FLAN-T5-base (247M parameters)
+- **Dataset**: 625 hydroponic Q&A pairs (500 train, 62 val, 93 test) - optimized split
+- **Training Config**:
+  - Epochs: 25 (increased for better convergence)
+  - Learning Rate: 3e-5 (increased for faster learning)
+  - Batch Size: 4, Gradient Accumulation: 2 (effective batch = 8)
+  - Warmup: 200 steps (increased for stability)
+  - Weight Decay: 0.02 (increased regularization)
+  - Scheduler: Cosine with warmup
+  - Gradient Clipping: 0.5
+- **Expected Improvements**:
+  - Target Training Loss: < 1.5
+  - Target ROUGE-1: > 0.45
+  - Target ROUGE-2: > 0.15
+- **Status**: Ready to run
 
-1. **Learning Rate Impact**: Higher learning rate (1e-4) significantly outperformed standard rates
-   - **5e-5**: 1.2449 validation loss (baseline)
-   - **1e-4**: 1.1890 validation loss (+4.5% improvement)
+### **Key Parameter Insights**
 
-2. **Batch Size Optimization**: Smaller batch size (8) performed better than larger (16)
-   - **Batch 8**: 1.1890 validation loss
-   - **Batch 16**: 2.2133 validation loss (+85.7% worse)
+| Parameter | Impact | Findings |
+|-----------|--------|----------|
+| **Learning Rate** | High | 3e-5 expected to converge faster than 1e-5 |
+| **Epochs** | High | 25 epochs for better convergence vs 12 |
+| **Batch Size** | Medium | Increased from 2 to 4 for stability |
+| **Scheduler** | Medium | Cosine decay for smoother convergence |
+| **Weight Decay** | Low-Medium | 0.02 for better regularization |
+| **Warmup Steps** | Low | Doubled to 200 for training stability |
 
-3. **Extended Training Benefits**: Additional epochs showed substantial gains
-   - **1 epoch**: 1.1890 validation loss
-   - **2 epochs**: 1.1013 validation loss (+11.5% improvement over baseline)
+### **Next Experiments to Try**
 
-#### **Optimal Configuration Identified**
-- **Best Setup**: Batch Size = 8, Learning Rate = 1e-4, Epochs = 2
-- **Performance**: 11.5% improvement over baseline
-- **Result**: Validation loss reduced from 1.2449 → 1.1013
+| Priority | Parameter Change | Rationale | Expected Impact |
+|----------|------------------|-----------|-----------------|
+| High | Learning Rate: 5e-5 | Middle ground between 1e-5 and 3e-5 | Better convergence without overshooting |
+| High | Epochs: 30-40 | More training time for complex patterns | Lower loss, better ROUGE scores |
+| Medium | Batch Size: 8 | Larger batches for stable gradients | More stable training |
+| Medium | Data Augmentation | Paraphrase existing Q&A pairs | Better generalization |
+| Low | Model: T5-large | Larger model capacity | Higher quality responses |
+| Low | Learning Rate Schedule: Polynomial | Alternative to cosine | Different convergence pattern |
 
-#### **Model Architecture Comparisons**
-- **Base T5-small**: Pre-trained performance on hydroponic domain
-- **Fine-tuned T5**: Domain-specific training on 625 Q&A pairs
-- **Optimized T5**: Best hyperparameter configuration with 11.5% improvement
+### **Quick Update Template**
 
-#### **Preprocessing Technique Analysis**
-Multiple data preprocessing approaches were tested:
-- **Text normalization**: 625 → 625 rows (no data loss)
-- **Duplicate removal**: 0 duplicates found (high-quality dataset)
-- **Short answer filtering**: Maintained all 625 rows (comprehensive answers)
-- **Train/Val/Test splits**: 499/63/63 (optimal for reliable validation)
+When you complete a new experiment, copy this template and fill in the results:
 
-**Impact**: Clean preprocessing pipeline ensured robust model training without data quality issues.
+```markdown
+#### **Experiment [NUMBER] - [DESCRIPTION]**
+- **Date**: [YYYY-MM-DD]
+- **Key Changes**: [What you changed from previous experiment]
+- **Results**:
+  - Training Loss: [FINAL_LOSS]
+  - Validation Loss: [VAL_LOSS] 
+  - Test ROUGE-1: [ROUGE1_SCORE]
+  - Test ROUGE-2: [ROUGE2_SCORE]
+  - Training Time: [HOURS]
+- **Assessment**: [EXCELLENT/GOOD/FAIR/POOR] - [Brief explanation]
+- **Next Steps**: [What to try next based on results]
+```
 
-#### **Deployment-Ready Architecture**
-The final implementation uses a **clean, minimal approach**:
-- **No artifacts folder**: All experiment results documented in README
-- **Memory-based processing**: Training data kept as variables, no temporary files
-- **Single-file app**: Complete functionality in `app.py` for easy deployment
-- **Base model integration**: Uses standard T5-small with documented improvements
-- **Reproducible results**: All experiments can be re-run from notebook
+### **Troubleshooting Guide**
 
-This approach ensures **maximum portability** and **zero file management overhead** while maintaining full experimental documentation.
+| Issue | Symptoms | Likely Cause | Solution |
+|-------|----------|--------------|----------|
+| High Loss (>3.0) | Slow convergence | Learning rate too low | Increase LR to 5e-5 or 1e-4 |
+| Loss Oscillation | Unstable training | Learning rate too high | Decrease LR to 1e-5 |
+| Overfitting | Train loss << Val loss | Insufficient regularization | Increase weight decay |
+| Poor ROUGE | Low text quality scores | Insufficient training | More epochs, better data |
+| Memory Issues | CUDA out of memory | Batch size too large | Reduce batch size, increase grad accum |
+| Slow Training | Long epoch times | Inefficient settings | Optimize batch size, use mixed precision |
 
-### **Evaluation Metrics** (Comprehensive)
-- **BLEU Score**: Text generation quality measurement for farming advice
-- **Token-level F1**: Precision/recall of generated agricultural content
+
+## Deployment
+
+The chatbot is a single-file Streamlit app (`app.py`). All experiments and training steps are documented in the notebook and README. No extra files or folders are needed.
+
+
+## Evaluation Metrics
+- BLEU Score: Measures text generation quality
+- F1 Score: Measures precision/recall of generated answers
 
 ### **Academic Excellence Summary** (Meets All Requirements)
 
@@ -270,201 +235,96 @@ This approach ensures **maximum portability** and **zero file management overhea
 
 ---
 
-## Usage Examples for Rwanda Context
 
-### **Minimal Web Application - Clean Interface**
-1. Open `http://localhost:8501` after running `streamlit run app.py`
-2. Model loads automatically (no manual setup required)
-3. Ask Rwanda-specific questions:
-   - "What pH level is best for lettuce in Kigali's climate?"
-   - "How often should I change nutrient solution during rainy season?"
-   - "Best hydroponic crops for Rwanda's market demands?"
-   - "Managing nutrients at 30°C temperature?"
+## Usage Example
 
-4. **Clean Experience**: Focus entirely on chatbot conversation
-5. **Professional Interface**: Perfect for academic demonstration
-6. **Auto-Detection**: Uses your trained model automatically
+1. Run `streamlit run app.py` and open `http://localhost:8501`
+2. Ask questions like:
+   - "What pH level is best for lettuce in Kigali?"
+   - "How often should I change nutrient solution?"
+   - "Best hydroponic crops for Rwanda?"
+3. The chatbot provides instant, focused answers.
 
 ---
 
-## Rwanda Agricultural Impact
 
-### **Target Users & Use Cases**
+## Target Users
 
-#### **Smallholder Farmers**
-- **Primary Interface**: Minimal web app focused on chat
-- **Key Questions**: Crop recommendations, nutrient management, troubleshooting
-- **Language Support**: English (with potential for Kinyarwanda expansion)
+- Smallholder farmers
+- Agricultural extension workers
+- Academic reviewers
 
-#### **Agricultural Extension Workers**
-- **Primary Interface**: Clean web application for demonstrations
-- **Key Use**: Training farmers, providing expert guidance
-- **Integration**: Works with existing extension programs
 
-#### **Academic Review**
-- **Primary Interface**: Professional chatbot for assignment evaluation
-- **Integration**: Clean, minimal design perfect for academic submission
-- **Scalability**: Focused functionality demonstrating core AI capabilities
+## Expected Outcomes
 
-### **Expected Agricultural Outcomes**
-
-| **Metric** | **Traditional Methods** | **With GrowMate** | **Improvement** |
-|------------|------------------------|-------------------|-----------------|
-| **Crop Yield** | 100% baseline | 120-130% | **+20-30%** |
-| **Water Usage** | 100% baseline | 60% | **-40%** |
-| **Question Response Time** | Hours/Days | Seconds | **99%+ faster** |
-| **Technical Knowledge Access** | Limited | 24/7 Available | **Unlimited** |
-| **Farming Decision Quality** | Variable | AI-Optimized | **Consistent** |
+- Improved crop yield
+- Reduced water usage
+- Faster access to farming advice
+- Consistent decision quality
 
 ---
 
-## Development & Customization
 
-### **Training Your Own Model for Local Conditions**
-1. Open `notebooks/growmate.ipynb`
-2. Replace dataset with Rwanda-specific agricultural data
-3. Modify hyperparameters in training section
-4. Execute training cells (GPU recommended for production)
+## Customization
 
-### **Adding Kinyarwanda Language Support**
-1. Translate FAQ dataset to Kinyarwanda
-2. Train multilingual T5 model
-3. Update interface text and examples
-4. Test with local farming communities
-
-### **Integrating with FarmSmart IoT Platform**
-1. Use REST API endpoints for sensor data integration
-2. Customize out-of-domain detection for agricultural contexts
-3. Add real-time environmental data to question processing
-4. Implement automated alerts and recommendations
+- Replace the dataset with local agricultural data for Rwanda
+- Modify training parameters in the notebook
+- Add Kinyarwanda support by translating the dataset and retraining
 
 ---
 
-## Performance & Scalability
 
-### **Model Performance (Rwanda Agricultural Context)**
-- **Base Model**: T5-small (77M parameters)
-- **Training Data**: 625 hydroponic Q&A pairs
-- **Evaluation**: BLEU ~0.45, F1 ~0.72, Perplexity ~15.8
-- **Response Time**: 1-3 seconds per agricultural query
+## Performance & Requirements
 
-### **Infrastructure Requirements**
-- **Minimum**: 4GB RAM, CPU-only inference
-- **Recommended**: 8GB RAM, GPU for training
-- **Production**: Load balancer + multiple instances
-- **Rural Deployment**: Works on low-bandwidth connections
-
-### **Rwanda Deployment Considerations**
-- **Internet Connectivity**: Optimized for 3G/4G networks
-- **Mobile-First**: Responsive design for smartphone access
-- **Data Efficiency**: Minimal bandwidth usage
-- **Offline Capability**: Potential for cached responses
+- Model: FLAN-T5-base
+- Training data: Hydroponic Q&A
+- Response time: 1-3 seconds per query
+- Minimum: 4GB RAM, CPU-only inference
+- Recommended: 8GB RAM, GPU for training
 
 ---
 
-## Community & Partnerships
 
-### **Academic Collaboration**
-- **University of Rwanda**: Agricultural research integration
-- **ALU (African Leadership University)**: Technical development
-- **International Partners**: FAO, CGIAR agricultural research
+## Community & Collaboration
 
-### **Industry Partnerships**
-- **Green City Kigali**: Urban agriculture implementation
-- **RYAF**: Youth farmer engagement and training
-- **Local Cooperatives**: Community-based deployment
-
-### **Open Source Contribution**
-- **GitHub Repository**: Open for community contributions
-- **Documentation**: Comprehensive guides for developers
-- **Training Materials**: Resources for agricultural extension
-- **API Standards**: Integration with other agri-tech platforms
+- Academic and industry partnerships welcome
+- Open source contributions encouraged
 
 ---
 
-## Security & Production Deployment
 
-### **Current Security Features**
-- Input validation and sanitization
-- Error handling and logging
-- CORS configuration for API
-- Out-of-domain detection
+## Security & Deployment
 
-### **Rwanda Production Recommendations**
-- Add authentication (farmer ID integration)
-- Implement rate limiting for API endpoints
-- Use HTTPS/TLS encryption for all communications
-- Deploy with Docker containers on cloud infrastructure
-- Set up monitoring and logging for agricultural insights
-- Integrate with national agricultural databases
+- Input validation and error handling
+- HTTPS recommended for production
+- Docker deployment supported
 
 ---
 
-## Support & Contact
 
-### **Technical Support**
-- **GitHub Repository**: Clean, minimal codebase for easy understanding
-- **Documentation**: All information consolidated in this comprehensive README
-- **Simple Application**: Essential functionality in minimal `streamlit run app.py`
-- **Easy Setup**: Just `pip install -r requirements.txt` and run
+## Support
 
-### **Agricultural Extension Support**
-- **Training Materials**: Available for extension workers
-- **Community Forums**: Connect with other Rwanda farmers
-- **WhatsApp Integration**: Planned for rural accessibility
-
-### **Partnership Inquiries**
-- **Research Collaboration**: university partnerships welcome
-- **NGO Integration**: agricultural development organizations
-- **Government Partnerships**: Ministry of Agriculture alignment
+- For technical help, see the GitHub repository and documentation
+- For agricultural extension, training materials are available
 
 ---
 
-## Future Roadmap
 
-### **Phase 1: Current (Q4 2025)**
-- Core AI chatbot functionality
-- Multiple user interfaces
-- English language support
-- Basic hydroponic guidance
+## Roadmap
 
-### **Phase 2: Rwanda Deployment (Q1 2026)**
-- � Kinyarwanda language support
-- Mobile app development
-- Integration with local agricultural databases
-- Partnership with extension services
-
-### **Phase 3: IoT Integration (Q2 2026)**
-- Real-time sensor data integration
-- Automated environmental recommendations
-- Predictive analytics for crop management
-- Integration with FarmSmart IoT platform
-
-### **Phase 4: Regional Expansion (Q3 2026)**
-- East African market expansion
-- Multi-crop support beyond hydroponics
-- Climate adaptation recommendations
-- Marketplace integration for crop sales
+- Current: Chatbot functionality and English support
+- Next: Kinyarwanda support, mobile app, local database integration
+- Future: IoT integration, regional expansion
 
 ---
 
-## � **Impact & Recognition**
 
-### **Academic Excellence**
-- **Grade Expectation**: Exemplary marks for technical depth and practical application
-- **Innovation**: Novel application of AI to Rwanda's agricultural challenges
-- **Scalability**: Designed for real-world deployment and impact
+## Impact
 
-### **Agricultural Technology Leadership**
-- **Modern Approach**: State-of-the-art transformer models for farming
-- **Practical Solution**: Addresses real needs of Rwanda's farming community
-- **Sustainable Impact**: Supports climate-resilient agriculture development
-
-### **Community Benefit**
-- **Farmer Empowerment**: 24/7 access to agricultural expertise
-- **Youth Engagement**: Technology-driven agriculture for new generation
-- **Economic Development**: Enhanced productivity and market access
+- Empowers farmers with instant hydroponic advice
+- Supports youth engagement in agriculture
+- Enhances productivity and market access
 
 ---
 
-**Ready to transform Rwanda's agriculture with AI? Start with GrowMate and join the FarmSmart revolution!**
+**Start using GrowMate to support Rwanda's hydroponic farming!**
