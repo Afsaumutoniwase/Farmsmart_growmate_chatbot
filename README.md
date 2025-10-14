@@ -35,6 +35,7 @@ streamlit run app.py
 ## Model Information
 - Base Model: Google FLAN-T5-base
 - Fine-tuned for hydroponic farming domain
+- Model hosted on Hugging Face Hub: [Afsa20/Farmsmart_Growmate](https://huggingface.co/Afsa20/Farmsmart_Growmate)
 - Optimized for deployment with error handling
 
 ## Contributing

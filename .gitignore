@@ -1,9 +1,29 @@
-# Ignore everything
-*
-*/
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
 
-# But don't ignore these files/folders
-!.gitignore
-!.gitattributes
-!trained_model/
-!trained_model/**
+# Virtual Environment
+env/
+venv/
+.venv/
+ENV/
+.env
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/secrets.toml
