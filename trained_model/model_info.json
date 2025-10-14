@@ -1,0 +1,25 @@
+{
+  "selected_experiment": "Experiment 3 (Max Convergence)",
+  "training_loss": 2.3852855150391457,
+  "test_loss": 3.2121520042419434,
+  "rouge1": 0.20611760284894698,
+  "rouge2": 0.04792503786220008,
+  "rougeL": 0.16646316936863415,
+  "all_experiments": [
+    {
+      "name": "Experiment 3 (Max Convergence)",
+      "training_loss": 2.3852855150391457,
+      "rouge2": 0.04792503786220008
+    },
+    {
+      "name": "Experiment 2 (Optimized)",
+      "training_loss": 3.141916796971881,
+      "rouge2": 0.04412355071397907
+    },
+    {
+      "name": "Experiment 1 (Baseline)",
+      "training_loss": 4.116506642134732,
+      "rouge2": 0.012464250127829082
+    }
+  ]
+}

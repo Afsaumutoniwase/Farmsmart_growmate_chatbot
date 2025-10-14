@@ -1,0 +1,9 @@
+# Ignore everything
+*
+*/
+
+# But don't ignore these files/folders
+!.gitignore
+!.gitattributes
+!trained_model/
+!trained_model/**
