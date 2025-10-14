@@ -2,35 +2,12 @@
 import os
 import json
 from datetime import datetime
-from PIL import Image
-from io import BytesIO
 import base64
 
-# --- Backend Model Dependencies ---
 try:
-    # def main():
-    # Load loader image for favicon
-    favicon_path = os.path.join("Assets", "loader.png")
-    if os.path.exists(favicon_path):
-        favicon_img = Image.open(favicon_path)
-        st.set_page_config(
-            page_title="FarmSmart - GrowMate",
-            page_icon=favicon_img,
-            layout="wide",
-            initial_sidebar_state="collapsed"
-        )
-    else:
-        st.set_page_config(
-            page_title="FarmSmart - GrowMate",
-            page_icon="🌱",
-            layout="wide",
-            initial_sidebar_state="collapsed"
-        ) 
-    # to import necessary libraries for the LLM
     from transformers import T5Tokenizer, T5ForConditionalGeneration
     import torch
 except ImportError:
-    # Define placeholder classes/functions if dependencies are missing for running the Streamlit UI
     class T5Tokenizer:
         @staticmethod
         def from_pretrained(name): return None
@@ -47,25 +24,12 @@ except ImportError:
     st.warning("LLM Dependencies (transformers, torch) not found. Running in UI-only mode.")
     st.warning("Please install them: pip install transformers torch")
 
-# --- Configuration for LLM ---
 class Config:
     MODEL_NAME = "google/flan-t5-base"
     MAX_INPUT_LENGTH = 512
     MAX_OUTPUT_LENGTH = 256
     TEMPERATURE = 0.7
     NUM_BEAMS = 4
-
-# --- Utility: Encode Leaf Icon as Base64 for CSS ---
-# Using a simple green leaf SVG for the logo in the custom header
-LEAF_SVG = """
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-leaf"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 16 12 16 12s-3.2 1.4-8.7 2.8c-1.6 4.7-5.2 6.5-8.7 2.8s-.2 1.4-8.7 2.8c-1.6 4.7-5.2 6.5-8.7 2.8c-1.6 4.7-5.2 6.5-8.7 2.8c-1.6 4.7-5.2 6.5-8.7 2.8z"/></path><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 16 12 16 12s-3.2 1.4-8.7 2.8c-1.6 4.7-5.2 6.5-8.7 2.8z"/></path></svg>
-"""
-
-def svg_to_base64(svg_string):
-    """Encodes SVG string to base64 data URI for CSS use."""
-    return f"data:image/svg+xml;base64,{base64.b64encode(svg_string.encode('utf-8')).decode('utf-8')}"
-
-# --- LLM Loading and Generation Functions (Provided by User) ---
 
 @st.cache_resource
 def load_model():
@@ -100,29 +64,28 @@ def load_model():
             print(f"Hugging Face model loading failed: {hf_error}")
             
             # Check for local fine-tuned model as fallback
-            trained_model_dir = "trained_model"
-            if os.path.exists(trained_model_dir):
-                config_path = os.path.join(trained_model_dir, "config.json")
-                if os.path.exists(config_path):
-                    with open(config_path, 'r') as f:
-                        config = json.load(f)
-                    
-                    model_info_path = os.path.join(trained_model_dir, "model_info.json")
-                    model_info = {}
-                    if os.path.exists(model_info_path):
-                        with open(model_info_path, 'r') as f:
-                            model_info = json.load(f)
-                    
-                    tokenizer = T5Tokenizer.from_pretrained(trained_model_dir)
-                    # Optimize model loading for deployment
-                    model = T5ForConditionalGeneration.from_pretrained(
-                        trained_model_dir,
-                        torch_dtype=torch.float16,  # Use float16 for smaller size
-                        low_cpu_mem_usage=True,
-                        device_map="auto" if device.type == 'cuda' else None
-                    )
-                    
-                    return tokenizer, model, "Fine-tuned FLAN-T5 (Local)", device, model_info
+        trained_model_dir = "trained_model"
+        if os.path.exists(trained_model_dir):
+            config_path = os.path.join(trained_model_dir, "config.json")
+            if os.path.exists(config_path):
+                with open(config_path, 'r') as f:
+                    config = json.load(f)
+                
+                model_info_path = os.path.join(trained_model_dir, "model_info.json")
+                model_info = {}
+                if os.path.exists(model_info_path):
+                    with open(model_info_path, 'r') as f:
+                        model_info = json.load(f)
+                
+                tokenizer = T5Tokenizer.from_pretrained(trained_model_dir)
+                model = T5ForConditionalGeneration.from_pretrained(
+                    trained_model_dir,
+                    torch_dtype=torch.float16,
+                    low_cpu_mem_usage=True,
+                    device_map="auto" if device.type == 'cuda' else None
+                )
+                
+                return tokenizer, model, "Fine-tuned FLAN-T5 (Local)", device, model_info
         
         # Fallback to base FLAN-T5 model
         tokenizer = T5Tokenizer.from_pretrained(Config.MODEL_NAME)
@@ -226,12 +189,24 @@ def ensure_model_loaded():
 # --- Streamlit UI and Logic ---
 
 def main():
-    st.set_page_config(
-        page_title="FarmSmart - GrowMate",
-        page_icon="🌱",
-        layout="wide",
-        initial_sidebar_state="collapsed"
-    )
+    # Load favicon
+    favicon_path = os.path.join("Assets", "loader.png")
+    if os.path.exists(favicon_path):
+        from PIL import Image
+        favicon_img = Image.open(favicon_path)
+        st.set_page_config(
+            page_title="FarmSmart - GrowMate",
+            page_icon=favicon_img,
+            layout="wide",
+            initial_sidebar_state="collapsed"
+        )
+    else:
+        st.set_page_config(
+            page_title="FarmSmart - GrowMate",
+            page_icon=":seedling:",
+            layout="wide",
+            initial_sidebar_state="collapsed"
+        )
 
     # Enhanced modern CSS with animations and better styling
     st.markdown("""
@@ -749,6 +724,16 @@ def main():
             padding-top: 0 !important;
         }
         
+        /* Suggestion pills hover effect */
+        span[style*="background: linear-gradient(135deg, #ecfdf5"] {
+            transition: all 0.2s ease;
+        }
+        
+        span[style*="background: linear-gradient(135deg, #ecfdf5"]:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.3);
+        }
+        
         /* Target the exact first chat message */
         .chat-area [data-testid="stChatMessage"]:first-child {
             margin-top: 0 !important;
@@ -839,7 +824,7 @@ def main():
     if logo_img_src:
         logo_html = f'<img src="{logo_img_src}" style="width: 24px; height: 24px; border-radius: 4px; object-fit: cover;">'
     else:
-        logo_html = '<div class="logo-icon">🌿</div>'
+        logo_html = '<div class="logo-icon">FS</div>'
     
     st.markdown(f"""
     <div class="header">
@@ -880,12 +865,12 @@ def main():
     if loader_img_src:
         avatar_html = f'<img src="{loader_img_src}" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 2px solid #10b981; box-shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.3);">'
     else:
-        avatar_html = '<div style="width: 40px; height: 40px; background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid #10b981; box-shadow: 0 4px 6px -1px rgba(249, 115, 22, 0.3);"><span style="color: white; font-size: 18px;">🤖</span></div>'
+        avatar_html = '<div style="width: 40px; height: 40px; background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid #10b981; box-shadow: 0 4px 6px -1px rgba(249, 115, 22, 0.3);"><span style="color: white; font-size: 16px; font-weight: bold;">GM</span></div>'
     
     # Get current time
-    from datetime import datetime
     current_time = datetime.now().strftime("%I:%M %p")
     
+    # Welcome message - split into two separate markdown blocks to avoid rendering issues
     st.markdown(f"""
     <div style="max-width: 800px; margin: 0 auto; padding: 32px 20px 20px 20px; animation: fadeInUp 0.6s ease-out;">
         <div style="display: flex; align-items: flex-start; margin-bottom: 24px;">
@@ -894,29 +879,32 @@ def main():
             </div>
             <div>
                 <div style="background: linear-gradient(135deg, #ffffff 0%, #f9fafb 100%); border-radius: 20px 20px 20px 6px; padding: 16px 20px; color: #374151; max-width: 85%; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); border: 1px solid #e5e7eb;">
-                    <p style="margin: 0 0 12px 0; line-height: 1.6; font-size: 15px; font-weight: 500;">👋 Welcome! I'm <span style="color: #10b981; font-weight: 700;">GrowMate</span>, your hydroponic farming assistant powered by AI.</p>
-                    <p style="margin: 0; line-height: 1.5; font-size: 14px; color: #6b7280;">Ask me anything about hydroponic systems, nutrient solutions, plant care, or getting started with hydroponics. I'm here to help you grow! 🌱</p>
+                    <p style="margin: 0 0 12px 0; line-height: 1.6; font-size: 15px; font-weight: 500;">Welcome! I'm <span style="color: #10b981; font-weight: 700;">GrowMate</span>, your hydroponic farming assistant powered by AI.</p>
+                    <p style="margin: 0; line-height: 1.5; font-size: 14px; color: #6b7280;">Ask me anything about hydroponic systems, nutrient solutions, plant care, or getting started with hydroponics. I'm here to help you grow!</p>
                     <div style="font-size: 11px; color: #9ca3af; margin-top: 8px; font-weight: 500;">{current_time}</div>
                 </div>
-                
-                <div style="margin-top: 16px; margin-left: 0;">
-                    <p style="font-size: 12px; color: #6b7280; margin-bottom: 8px; font-weight: 600;">💡 Try asking:</p>
-                    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-                        <span style="background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); color: #047857; padding: 8px 14px; border-radius: 16px; font-size: 13px; cursor: pointer; border: 1px solid #a7f3d0; transition: all 0.2s ease; display: inline-block; font-weight: 500;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 6px -1px rgba(16, 185, 129, 0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
-                            🌿 What is hydroponic farming?
-                        </span>
-                        <span style="background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); color: #047857; padding: 8px 14px; border-radius: 16px; font-size: 13px; cursor: pointer; border: 1px solid #a7f3d0; transition: all 0.2s ease; display: inline-block; font-weight: 500;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 6px -1px rgba(16, 185, 129, 0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
-                            💧 How do I maintain pH levels?
-                        </span>
-                        <span style="background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); color: #047857; padding: 8px 14px; border-radius: 16px; font-size: 13px; cursor: pointer; border: 1px solid #a7f3d0; transition: all 0.2s ease; display: inline-block; font-weight: 500;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 6px -1px rgba(16, 185, 129, 0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
-                            🥬 Best crops for beginners?
-                        </span>
-                        <span style="background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); color: #047857; padding: 8px 14px; border-radius: 16px; font-size: 13px; cursor: pointer; border: 1px solid #a7f3d0; transition: all 0.2s ease; display: inline-block; font-weight: 500;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 6px -1px rgba(16, 185, 129, 0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
-                            🔧 NFT system setup guide
-                        </span>
-                    </div>
-                </div>
             </div>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    # Suggestion pills in a separate block
+    st.markdown("""
+    <div style="max-width: 800px; margin: -8px auto 0 auto; padding: 0 20px 20px 76px;">
+        <p style="font-size: 12px; color: #6b7280; margin-bottom: 8px; font-weight: 600;">Try asking:</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+            <span style="background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); color: #047857; padding: 8px 14px; border-radius: 16px; font-size: 13px; border: 1px solid #a7f3d0; display: inline-block; font-weight: 500;">
+                What is hydroponic farming?
+            </span>
+            <span style="background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); color: #047857; padding: 8px 14px; border-radius: 16px; font-size: 13px; border: 1px solid #a7f3d0; display: inline-block; font-weight: 500;">
+                How do I maintain pH levels?
+            </span>
+            <span style="background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); color: #047857; padding: 8px 14px; border-radius: 16px; font-size: 13px; border: 1px solid #a7f3d0; display: inline-block; font-weight: 500;">
+                Best crops for beginners?
+            </span>
+            <span style="background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); color: #047857; padding: 8px 14px; border-radius: 16px; font-size: 13px; border: 1px solid #a7f3d0; display: inline-block; font-weight: 500;">
+                NFT system setup guide
+            </span>
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -942,7 +930,7 @@ def main():
                 if loader_img_src:
                     avatar_img = f'<img src="{loader_img_src}" style="width: 36px; height: 36px; border-radius: 50%; object-fit: cover; border: 2px solid #10b981; box-shadow: 0 2px 4px rgba(16, 185, 129, 0.2);">'
                 else:
-                    avatar_img = '<div style="width: 36px; height: 36px; background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid #10b981; box-shadow: 0 2px 4px rgba(249, 115, 22, 0.2);"><span style="color: white; font-size: 18px;">🤖</span></div>'
+                    avatar_img = '<div style="width: 36px; height: 36px; background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid #10b981; box-shadow: 0 2px 4px rgba(249, 115, 22, 0.2);"><span style="color: white; font-size: 16px; font-weight: bold;">GM</span></div>'
                 
                 messages_html += f"""
                 <div style="max-width: 800px; margin: 0 auto; padding: 0 20px; margin-bottom: 24px; margin-top: 12px; animation: fadeInLeft 0.4s ease-out;">
@@ -993,7 +981,7 @@ def main():
         st.markdown(user_message_html, unsafe_allow_html=True)
         
         # Show enhanced thinking indicator with animation
-        with st.spinner("🌱 GrowMate is thinking..."):
+        with st.spinner("GrowMate is thinking..."):
             tokenizer = st.session_state.get("tokenizer")
             model = st.session_state.get("model")
             model_type = st.session_state.get("model_type", "Base FLAN-T5")
@@ -1008,7 +996,7 @@ def main():
         if loader_img_src:
             avatar_display = f'<img src="{loader_img_src}" style="width: 36px; height: 36px; border-radius: 50%; object-fit: cover; border: 2px solid #10b981; box-shadow: 0 2px 4px rgba(16, 185, 129, 0.2);">'
         else:
-            avatar_display = '<div style="width: 36px; height: 36px; background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid #10b981; box-shadow: 0 2px 4px rgba(249, 115, 22, 0.2);"><span style="color: white; font-size: 18px;">🤖</span></div>'
+            avatar_display = '<div style="width: 36px; height: 36px; background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid #10b981; box-shadow: 0 2px 4px rgba(249, 115, 22, 0.2);"><span style="color: white; font-size: 16px; font-weight: bold;">GM</span></div>'
         
         assistant_message_html = f"""
         <div style="max-width: 800px; margin: 0 auto; padding: 0 20px; margin-bottom: 24px; margin-top: 12px; animation: fadeInLeft 0.4s ease-out;">
