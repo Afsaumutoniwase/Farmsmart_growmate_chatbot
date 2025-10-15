@@ -10,7 +10,7 @@ GrowMate is a hydroponic farming chatbot designed for Rwanda, built using the FL
 - **Live Demo**: [Try GrowMate Chatbot](https://farmsmartgrowmatechatbot.streamlit.app/)
 - **GitHub Repository**: [View Source Code](https://github.com/Afsaumutoniwase/Farmsmart_growmate_chatbot)
 - **Hugging Face Model**: [Fine-tuned FLAN-T5 Model](https://huggingface.co/Afsa20/Farmsmart_Growmate/tree/main)
-- **Demo Video**: [Watch on YouTube](https://youtube.com/watch?v=demo-video-id) (Coming Soon)
+- **Demo Video**: [Watch on YouTube](https://www.youtube.com/watch?v=DLju-kdCgy0)
 
 ---
 
